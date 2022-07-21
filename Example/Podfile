@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '14.0'
+
+target 'GHToolKit_Example' do
+  pod 'GHToolKit', :path => '../'
+
+  target 'GHToolKit_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
