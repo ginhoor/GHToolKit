@@ -12,7 +12,7 @@ public extension Date {
         return GHDateExtension(self)
     }
 
-    static var ghStatic: GHDateExtension.Type {
+    static var Gh: GHDateExtension.Type {
         return GHDateExtension.self
     }
 }

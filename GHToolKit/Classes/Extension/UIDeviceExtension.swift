@@ -12,7 +12,7 @@ public extension UIDevice {
         return GHUIDeviceExtension(self)
     }
 
-    static var ghStatic: GHUIDeviceExtension.Type {
+    static var Gh: GHUIDeviceExtension.Type {
         return GHUIDeviceExtension.self
     }
 }

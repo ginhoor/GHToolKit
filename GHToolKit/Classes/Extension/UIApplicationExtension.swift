@@ -12,7 +12,7 @@ public extension UIApplication {
         return GHUIApplicationExtension(self)
     }
 
-    static var ghStatic: GHUIApplicationExtension.Type {
+    static var Gh: GHUIApplicationExtension.Type {
         return GHUIApplicationExtension.self
     }
 }
