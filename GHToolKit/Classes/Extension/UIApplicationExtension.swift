@@ -22,15 +22,18 @@ public struct GHUIApplicationExtension {
     internal init(_ application: UIApplication) {
         self.application = application
     }
+}
 
-    public func openUrl(_ urlStr: String?) {
+
+public extension GHUIApplicationExtension {
+    func openUrl(_ urlStr: String?) {
         guard let string = urlStr, let url = URL(string: string) else {
             return
         }
         application.open(url, options: [:], completionHandler: nil)
     }
 
-    public func openEmailSetting() {
+    func openEmailSetting() {
         openUrl("MESSAGE://")
     }
 }
