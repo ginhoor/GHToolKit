@@ -30,8 +30,13 @@ public extension GHUIApplicationExtension {
         guard let string = urlStr, let url = URL(string: string) else {
             return
         }
+        openUrl(url)
+    }
+
+    func openUrl(_ url: URL) {
         application.open(url, options: [:], completionHandler: nil)
     }
+
 
     func openEmailSetting() {
         openUrl("MESSAGE://")
