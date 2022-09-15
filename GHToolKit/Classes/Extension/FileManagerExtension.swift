@@ -66,7 +66,6 @@ public extension GHFileManagerExtension {
 public extension GHFileManagerExtension {
 
     func sandboxDocumentURL() -> URL {
-
         let paths = self.manager.urls(for: .documentDirectory, in: .userDomainMask)
         let dir = paths[0]
         return dir
@@ -91,19 +90,13 @@ public extension GHFileManagerExtension {
     /// 创建路径
     func createDirectoryIfNotExist(dirPath: String, deleteFirstIfExist: Bool = false) throws {
         let dirURL = URL(string: dirPath)
-        guard let dirURL = dirURL else {
-            return
-        }
+        guard let dirURL = dirURL else { return }
         try createDirectoryIfNotExist(dirURL: dirURL, deleteFirstIfExist: deleteFirstIfExist)
     }
 
     /// 创建文件夹
     func createDirectoryIfNotExist(dirURL: URL, deleteFirstIfExist: Bool = false) throws {
-
-        if !deleteFirstIfExist && self.manager.fileExists(atPath: dirURL.path) {
-            return
-        }
-
+        if !deleteFirstIfExist && self.manager.fileExists(atPath: dirURL.path) { return }
         try self.deleteFile(fileURL: dirURL)
         try self.manager.createDirectory(atPath: dirURL.path, withIntermediateDirectories: true, attributes: nil)
     }
