@@ -160,9 +160,7 @@ public extension GHFileManagerExtension {
     /// 文件移动
     @discardableResult
     func moveFile(atURL: URL, toURL: URL) throws -> Bool {
-        guard self.manager.fileExists(atPath: atURL.path) else {
-            return false
-        }
+        guard self.manager.fileExists(atPath: atURL.path) else { return false }
         try self.deleteFile(fileURL: toURL)
         try self.manager.moveItem(at: atURL, to: toURL)
         return true
@@ -171,14 +169,8 @@ public extension GHFileManagerExtension {
     /// 文件拷贝
     @discardableResult
     func copy(atURL: URL, toURL: URL) throws -> Bool {
-        if atURL == toURL {
-            return true
-        }
-
-        guard FileManager.default.fileExists(atPath: atURL.path) else {
-            return false
-        }
-
+        if atURL == toURL { return true }
+        guard FileManager.default.fileExists(atPath: atURL.path) else { return false }
         try self.deleteFile(fileURL: toURL)
         let toDir = toURL.deletingLastPathComponent()
         try createDirectoryIfNotExist(dirURL: toDir)
@@ -189,11 +181,7 @@ public extension GHFileManagerExtension {
 
     /// 输出字符串到文件
     func outputTextToFile(fileURL: URL, contentText: String, breakIfExist: Bool = false) throws {
-
-        if breakIfExist && self.manager.fileExists(atPath: fileURL.path) {
-            return
-        }
-
+        if breakIfExist && self.manager.fileExists(atPath: fileURL.path) { return }
         let dir = fileURL.deletingLastPathComponent()
         try createDirectoryIfNotExist(dirURL: dir)
         try contentText.write(to: fileURL, atomically: true, encoding: .utf8)
@@ -201,9 +189,7 @@ public extension GHFileManagerExtension {
 
     /// 输出二进制数据到文件
     func outputDataToFile(fileURL: URL, data: Data, breakIfExist: Bool = false) throws {
-        if breakIfExist && self.manager.fileExists(atPath: fileURL.path) {
-            return
-        }
+        if breakIfExist && self.manager.fileExists(atPath: fileURL.path) { return }
 
         let dir = fileURL.deletingLastPathComponent()
         try createDirectoryIfNotExist(dirURL: dir)
@@ -233,26 +219,19 @@ public extension GHFileManagerExtension {
 
     func creationDate(path: String) -> Date? {
         guard let attributes = attributes(path: path),
-              let creationDate = attributes[.creationDate] as? Date else {
-            return nil
-        }
-
+              let creationDate = attributes[.creationDate] as? Date else { return nil }
         return creationDate
     }
 
     func modificationDate(path: String) -> Date? {
         guard let attributes = attributes(path: path),
-              let modificationDate = attributes[.modificationDate] as? Date else {
-            return nil
-        }
+              let modificationDate = attributes[.modificationDate] as? Date else { return nil }
         return modificationDate
     }
 
     func filesize(path: String) -> UInt64? {
         guard let attributes = attributes(path: path),
-              let size = attributes[.size] as? UInt64 else {
-            return nil
-        }
+              let size = attributes[.size] as? UInt64 else { return nil }
         return size
     }
 
