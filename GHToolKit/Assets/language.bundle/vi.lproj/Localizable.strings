@@ -1,0 +1,134 @@
+// L10N_LANG_INCLUDE=pt-BR,ja,fr,ru,de,th,vi,zh-cn,zh-tw,id,ar,ko,es
+
+// Action
+"delete" = "Xóa";
+"cancel" = "Hủy";
+"dismiss" = "Bỏ qua";
+"submit_action_title" = "Vâng";
+"ok" = "OK";
+"more" = "Hơn nữa";
+
+// Banner
+"user_trail_banner_title" = "%@ Hình ảnh";
+"user_trail_banner_subtitle" = "Gói miễn phí: %@ ảnh còn lại";
+"user_trail_banner_no_count_subtitle" = "Dùng hết các lần miễn phí";
+
+// Home
+"create_tips_title" = "Đi nào!";
+"create_tips_subtitle" = "Chọn một bức ảnh và Hãy để điều kỳ diệu xảy ra nào";
+
+// UIAlertController
+"alert_delete_project_title" = "Bạn có chắc chắn xóa dự án không?";
+
+"alert_not_save_project_title" = "Ảnh chưa lưu";
+"alert_not_save_project_msg" = "Bạn có chắc chắn thoát mà không lưu?";
+"alert_not_save_project_action_submit" = "Thoát mà không lưu";
+
+
+// Purchase Limited
+"purchase_edit_limited_title" = "Bạn đã thoát chỉnh sửa";
+"purchase_edit_limited_subtitle" = "Nâng cấp để nhận được các nâng cao ảnh không giới hạn.";
+"purchase_edit_limited_action_go" = "Mở khóa các bản cắt không giới hạn";
+"purchase_edit_limited_action_ad" = "Xem video để mở khóa 1 lần";
+
+// HUD
+"hud_congratulations_title" = "Xin chúc mừng!";
+"hud_congratulations_subtitle" = "Thiết kế của bạn đã được lưu";
+
+"hud_progress_title" = "Tiến triển";
+
+"hud_error_offline" = "Vui lòng kiểm tra mạng của bạn";
+"hud_error_photo_download" = "Tải hình thất bại\nVui lòng thử lại sau.";
+
+"hud_error_title_5003" = "Không tải được hình ảnh.";
+"hud_error_title_5004" = "Không tải được hình ảnh";
+"hud_error_title_5008" = "Hình ảnh của bạn không được nhận dạng chính xác";
+"hud_error_title_network" = "Không tải được hình ảnh.";
+"hud_error_title_server_universal" = "Máy chủ đang bận, vui lòng thử lại sau.";
+"hud_error_title_client_universal" = "Thu thập hình ảnh không thành công.";
+
+"hud_error_subtitle_universal" = "Vui lòng thử lại sau";
+"hud_error_subtitle_network" = "Xin vui lòng kiểm tra kết nối Internet của bạn.";
+
+"hud_ad_reward_failed" = "Thất bại";
+"hud_ad_reward_success" = "Hình ảnh +%@";
+
+// tips
+"tips_vc_title" = "Mẹo để có kết quả tốt nhất";
+"tips_vc_subtitle1" = "👏 Chân dung, độ phân giải thấp và ảnh cũ";
+"tips_vc_subtitle2" = "❌ Độ phân giải cao, bị hư hại nặng và khó nhận diện khuôn mặt";
+
+// Preview
+"preview_rate_title" = "Kết quả đánh giá";
+"preview_rate_finish_title" = "Cảm ơn!";
+
+
+"preview_save_title" = "Lưu";
+"preview_save_with_ad_title" = "Xem quảng cáo";
+"preview_save_without_ads_title" = "Xóa quảng cáo";
+"preview_save_without_ads_subtitle" = "Xóa quảng cáo và giới hạn";
+
+
+// Result
+"enhance_result_segement_title_1" = "Kết quả 1";
+"enhance_result_segement_title_2" = "Kết quả 2";
+"enhance_result_segement_title_3" = "Video";
+
+"enhance_result_list_channel_title_1" = "Lưu hình ảnh";
+"enhance_result_list_channel_title_2" = "Chia sẻ trên Instagram";
+"enhance_result_list_channel_title_3" = "Hơn nữa";
+"enhance_result_list_channel_title_4" = "Lưu video";
+
+// Prepare
+"prepare_enhance_title_step1" = "Hình ảnh của bạn đang được xử lý ...";
+"prepare_enhance_title_step2" = "Mọi thứ đã sẵn sàng\nAI đang nỗ lực xử lý các bức ảnh của bạn ...";
+"prepare_enhance_title_step3" = "Chờ một chút.\nAI đang tái tạo lại các chi tiết ...";
+
+"prepare_enhance_subtitle" = "Vui lòng không đóng ứng dụng hoặc khóa thiết bị của bạn";
+
+// Purchase
+"purchase_success" = "Mua hàng thành công";
+"purchase_failed_tips" = "Mua hàng thất bại, vui lòng kiểm tra Apple ID trong cài đặt.";
+"restore_success" = "Khôi phục thành công";
+"restore_fail" = "Khôi phục thất bại";
+"subscription_expired" = "Đăng ký hết hạn";
+"privacy_policy" = "Chính sách bảo mật";
+"terms_of_use" = "Điều khoản sử dụng";
+"purchase_week" = "tuần";
+"purchase_month" = "Tháng";
+"weekly" = "Hàng tuần";
+"monthly" = "Tháng";
+"purchase_free_format" = "%@ ngày miễn phí, sau đó %@";
+"launch_purchase_unlock_title" = "Mở khóa các nâng cấp ảnh không giới hạn";
+"launch_purchase_unlock_tips" = "Hãy để ký ức của bạn tỏa sáng một lần nữa!";
+"continue" = "Tiếp tục";
+"restore" = "Khôi phục";
+
+"purchase_free" = "Miễn phí";
+"purchase_trial_title" = "Đã mở miễn phí dùng thử";
+"purchase_trial_title1" = "Đã chắc chưa?";
+"purchase_trial_subtitle1" = "Bắt đầu dùng thử miễn phí";
+
+// Launch Guide
+"launch_guide_title_0" = "Chào mừng bạn đến với Pixelance!";
+"launch_guide_title_1" = "Nâng cao chất lượng tốt hơn";
+"launch_guide_title_2" = "Nâng cao cho những khoảnh khắc đặc biệt";
+"launch_guide_title_3" = "Nâng cao cho những kỷ niệm giá trị";
+
+// Setting
+"setting_vc_title" = "Cài đặt";
+"setting_vc_item_done_title" = "Xong";
+
+"setting_vc_list_social_group_title" = "Truyền thông xã hội";
+"setting_vc_list_instagram_title" = "Instagram";
+"setting_vc_list_facebook_title" = "Facebook";
+
+"setting_vc_list_support_group_title" = "Trợ giúp & Ủng hộ";
+"setting_vc_list_contact_us_title" = "Liện hệ chúng tôi";
+"setting_vc_list_about_title" = "Về";
+
+"setting_vc_list_rate_title" = "Tỷ lệ";
+"setting_vc_list_share_title" = "Chia sẻ";
+"setting_vc_list_vip_title" = "Nâng cao hình ảnh không giới hạn";
+
+"version" = "Phiên bản";

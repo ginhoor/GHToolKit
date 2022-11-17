@@ -1,0 +1,134 @@
+// L10N_LANG_INCLUDE=pt-BR,ja,fr,ru,de,th,vi,zh-cn,zh-tw,id,ar,ko,es
+
+// Action
+"delete" = "Excluir";
+"cancel" = "Cancelar";
+"dismiss" = "Ignorar";
+"submit_action_title" = "OK";
+"ok" = "OK";
+"more" = "Mais";
+
+// Banner
+"user_trail_banner_title" = "%@ Fotos";
+"user_trail_banner_subtitle" = "Disponível: %@ foto(s) restante(s)";
+"user_trail_banner_no_count_subtitle" = "Não há mais disponível";
+
+// Home
+"create_tips_title" = "Vamos!";
+"create_tips_subtitle" = "Selecione uma foto e deixe a mágica acontecer";
+
+// UIAlertController
+"alert_delete_project_title" = "Tem certeza de que deseja excluir o projeto?";
+
+"alert_not_save_project_title" = "Foto não salva";
+"alert_not_save_project_msg" = "Tem certeza de sair sem salvar?";
+"alert_not_save_project_action_submit" = "Sair sem salvar";
+
+
+// Purchase Limited
+"purchase_edit_limited_title" = "As edições grátis já acabaram";
+"purchase_edit_limited_subtitle" = "Atualize para obter recursos de realça ilimitados para fotos.";
+"purchase_edit_limited_action_go" = "Assine agora";
+"purchase_edit_limited_action_ad" = "Assista a um vídeo para desbloquear uma vez";
+
+// HUD
+"hud_congratulations_title" = "Parabéns!";
+"hud_congratulations_subtitle" = "Seu design foi salvo";
+
+"hud_progress_title" = "Progresso";
+
+"hud_error_offline" = "Você está desconectado, por favor verifique a conexão internet.";
+"hud_error_photo_download" = "Falha ao baixar a imagem.\nTente novamente mais tarde.";
+
+"hud_error_title_5003" = "Opa! Falha ao carregar a imagem.";
+"hud_error_title_5004" = "Opa! Falha ao baixar a imagem.";
+"hud_error_title_5008" = "Opa! IA não pode reconhecer sua imagem corretamente.";
+"hud_error_title_network" = "Opa! Falha ao carregar a imagem.";
+"hud_error_title_server_universal" = "Opa! O servidor de IA está meio ocupado neste momento.";
+"hud_error_title_client_universal" = "Opa! Falha ao acessar a imagem.";
+
+"hud_error_subtitle_universal" = "Por favor, tente novamente mais tarde";
+"hud_error_subtitle_network" = "Verifique sua conexão internet.";
+
+"hud_ad_reward_failed" = "Falhou";
+"hud_ad_reward_success" = "Foto +%@";
+
+// tips
+"tips_vc_title" = "Dicas para melhores resultados";
+"tips_vc_subtitle1" = "👏 Retrato, baixa resolução e fotos antigas";
+"tips_vc_subtitle2" = "❌ Alta resolução, severamente danificado e difícil de reconhecer o rosto";
+
+// Preview
+"preview_rate_title" = "Avalie o resultado";
+"preview_rate_finish_title" = "Obrigado!";
+
+
+"preview_save_title" = "Salvar";
+"preview_save_with_ad_title" = "Assista a um anúncio";
+"preview_save_without_ads_title" = "Remover anúncio";
+"preview_save_without_ads_subtitle" = "Sem anúncio e sem limites";
+
+
+// Result
+"enhance_result_segement_title_1" = "Resultado 1";
+"enhance_result_segement_title_2" = "Resultado 2";
+"enhance_result_segement_title_3" = "Vídeo";
+
+"enhance_result_list_channel_title_1" = "Salvar imagem";
+"enhance_result_list_channel_title_2" = "Compartilhar no Instagram";
+"enhance_result_list_channel_title_3" = "Mais";
+"enhance_result_list_channel_title_4" = "Salvar vídeo";
+
+// Prepare
+"prepare_enhance_title_step1" = "Processando sua imagem...";
+"prepare_enhance_title_step2" = "Tudo pronto!\nIA está trabalhando...";
+"prepare_enhance_title_step3" = "Aguarde um minutinho.\nIA está reconstruindo os detalhes...";
+
+"prepare_enhance_subtitle" = "Por favor, não feche o aplicativo e nem bloqueie seu dispositivo";
+
+// Purchase
+"purchase_success" = "Compra sucedida";
+"purchase_failed_tips" = "A compra falhou, por favor verifique as configurações da sua Apple ID.";
+"restore_success" = "Sucesso ao restaurar";
+"restore_fail" = "Falha ao restaurar";
+"subscription_expired" = "Assinatura expirada";
+"privacy_policy" = "Política de Privacidade";
+"terms_of_use" = "Termos de uso";
+"purchase_week" = "semana";
+"purchase_month" = "mês";
+"weekly" = "Semanal";
+"monthly" = "Mensal";
+"purchase_free_format" = "%@ dias grátis, depois %@";
+"launch_purchase_unlock_title" = "Desbloqueie recursos de realça ilimitados para fotos";
+"launch_purchase_unlock_tips" = "Faça as memórias brilharem novamente!";
+"continue" = "Continuar";
+"restore" = "Restaurar";
+
+"purchase_free" = "Grátis";
+"purchase_trial_title" = "Teste grátis ativado";
+"purchase_trial_title1" = "Ainda na dúvida?";
+"purchase_trial_subtitle1" = "Ative teste grátis";
+
+// Launch Guide
+"launch_guide_title_0" = "Bem-vindos ao Pixelance!";
+"launch_guide_title_1" = "Realce para Qualidades Melhores";
+"launch_guide_title_2" = "Realce para Momentos Especiais";
+"launch_guide_title_3" = "Realce para Lembranças Preciosas";
+
+// Setting
+"setting_vc_title" = "Configuração";
+"setting_vc_item_done_title" = "Pronto";
+
+"setting_vc_list_social_group_title" = "Rede social";
+"setting_vc_list_instagram_title" = "Instagram";
+"setting_vc_list_facebook_title" = "Facebook";
+
+"setting_vc_list_support_group_title" = "Ajuda e Suporte";
+"setting_vc_list_contact_us_title" = "Contate-nos";
+"setting_vc_list_about_title" = "Sobre";
+
+"setting_vc_list_rate_title" = "Avalie";
+"setting_vc_list_share_title" = "Compartilhe";
+"setting_vc_list_vip_title" = "Recursos de realça ilimitados para fotos";
+
+"version" = "Versão";

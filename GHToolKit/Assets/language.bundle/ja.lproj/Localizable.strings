@@ -1,0 +1,134 @@
+// L10N_LANG_INCLUDE=pt-BR,ja,fr,ru,de,th,vi,zh-cn,zh-tw,id,ar,ko,es
+
+// Action
+"delete" = "削除";
+"cancel" = "キャンセル";
+"dismiss" = "棄却";
+"submit_action_title" = "はい、わかりました";
+"ok" = "OK";
+"more" = "多くを得る";
+
+// Banner
+"user_trail_banner_title" = "%@ 枚の写真";
+"user_trail_banner_subtitle" = "無料プラン: %@ 枚の写真が残っている";
+"user_trail_banner_no_count_subtitle" = "対象外";
+
+// Home
+"create_tips_title" = "レッツゴー!";
+"create_tips_subtitle" = "写真を選択して奇跡を起こす";
+
+// UIAlertController
+"alert_delete_project_title" = "本当にプロジェクトを削除していいですか？";
+
+"alert_not_save_project_title" = "写真は保存されていません";
+"alert_not_save_project_msg" = "保存せずに終了してよろしいですか？";
+"alert_not_save_project_action_submit" = "保存しないで終了";
+
+
+// Purchase Limited
+"purchase_edit_limited_title" = "あなたはクリップしていません";
+"purchase_edit_limited_subtitle" = "アップグレードして無限の写真拡張を実現します";
+"purchase_edit_limited_action_go" = "今すぐ無制限カットを入手";
+"purchase_edit_limited_action_ad" = "ビデオを見て一度ロックを解除";
+
+// HUD
+"hud_congratulations_title" = "おめでとう！";
+"hud_congratulations_subtitle" = "デザインが保存されました";
+
+"hud_progress_title" = "進歩する";
+
+"hud_error_offline" = "インターネットの接続を確認してください";
+"hud_error_photo_download" = "画像のダウンロードの失敗しました\nもう一度試してみてください";
+
+"hud_error_title_5003" = "画像の処理に失敗しました";
+"hud_error_title_5004" = "画像のダウンロードに失敗しました";
+"hud_error_title_5008" = "AIは画像を正確に認識することができません";
+"hud_error_title_network" = "画像の処理に失敗しました";
+"hud_error_title_server_universal" = "サーバーは今ちょっと忙しいです、後でもう一度試してみてください";
+"hud_error_title_client_universal" = "画像のアクセスに失敗しました";
+
+"hud_error_subtitle_universal" = "後でもう一度試してみてください";
+"hud_error_subtitle_network" = "インターネット接続を確認してくだだい";
+
+"hud_ad_reward_failed" = "失敗した";
+"hud_ad_reward_success" = "写真 +%@";
+
+// tips
+"tips_vc_title" = "最良の結果を得るためのヒント";
+"tips_vc_subtitle1" = "👏 ポートレイト、低解像度、古い写真";
+"tips_vc_subtitle2" = "❌ 高画質、ひどい損傷、顔が認識しにくい";
+
+// Preview
+"preview_rate_title" = "評定結果";
+"preview_rate_finish_title" = "ありがとうごうざいます！";
+
+
+"preview_save_title" = "保存";
+"preview_save_with_ad_title" = "広告を見る";
+"preview_save_without_ads_title" = "広告なしで保存";
+"preview_save_without_ads_subtitle" = "広告と制限なし";
+
+
+// Result
+"enhance_result_segement_title_1" = "結果1";
+"enhance_result_segement_title_2" = "結果2";
+"enhance_result_segement_title_3" = "ビデオ";
+
+"enhance_result_list_channel_title_1" = "画像の保存";
+"enhance_result_list_channel_title_2" = "インストグラムに共有";
+"enhance_result_list_channel_title_3" = "もっと";
+"enhance_result_list_channel_title_4" = "ビデオ保存";
+
+// Prepare
+"prepare_enhance_title_step1" = "只今、画像を処理しています...";
+"prepare_enhance_title_step2" = "すべて準備ok\nAIは今画像を処理に励んでいます...";
+"prepare_enhance_title_step3" = "少々お待ちください\nAIは画像の詳細を再構築しています...";
+
+"prepare_enhance_subtitle" = "アプリケーションを閉じたり、デバイスをロックしたりしないでください";
+
+// Purchase
+"purchase_success" = "購入しました";
+"purchase_failed_tips" = "購入に失敗しました。Apple IDの設定をご確認ください。";
+"restore_success" = "リストアしました";
+"restore_fail" = "リストア失敗しました";
+"subscription_expired" = "購読期限が切れました";
+"privacy_policy" = "プライバシーポリシー";
+"terms_of_use" = "利用規約";
+"purchase_week" = "週";
+"purchase_month" = "月";
+"weekly" = "週";
+"monthly" = "月";
+"purchase_free_format" = "%@ 日無料,まで %@";
+"launch_purchase_unlock_title" = "無限写真拡張機能がロック解除";
+"launch_purchase_unlock_tips" = "あなたの思い出を再び輝かせる!";
+"continue" = "続ける";
+"restore" = "購入を戻す";
+
+"purchase_free" = "無料";
+"purchase_trial_title" = "無料試用が有効";
+"purchase_trial_title1" = "まだ決まってない？";
+"purchase_trial_subtitle1" = "無料トライアルが有効になりました";
+
+// Launch Guide
+"launch_guide_title_0" = "Pixelanceへようこそ！";
+"launch_guide_title_1" = "品質を高める";
+"launch_guide_title_2" = "特別な時のために強化する";
+"launch_guide_title_3" = "貴重な記憶を強める";
+
+// Setting
+"setting_vc_title" = "設定";
+"setting_vc_item_done_title" = "完了";
+
+"setting_vc_list_social_group_title" = "メーシャルメディア";
+"setting_vc_list_instagram_title" = "Instagram";
+"setting_vc_list_facebook_title" = "Facebook";
+
+"setting_vc_list_support_group_title" = "ヘルプ＆サポート";
+"setting_vc_list_contact_us_title" = "連絡します";
+"setting_vc_list_about_title" = "について";
+
+"setting_vc_list_rate_title" = "スピード";
+"setting_vc_list_share_title" = "共有";
+"setting_vc_list_vip_title" = "無制限の写真補正";
+
+"version" = "バージョン";

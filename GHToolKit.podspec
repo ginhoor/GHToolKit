@@ -32,6 +32,7 @@ TODO: Add long description of the pod here.
   s.swift_version = '5.0'
 
   s.source_files = 'GHToolKit/Classes/**/*'
+  s.resource     = 'GHToolKit/Assets/*'
 
   # s.resource_bundles = {
   #   'GHToolKit' => ['GHToolKit/Assets/*.png']
