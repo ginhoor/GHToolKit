@@ -42,10 +42,13 @@ public extension GHDateExtension {
     static var weekSeconds: Int { return 7 * daySeconds }
     static var monthSeconds: Int { return 30 * daySeconds }
 
+    static var monthNames: [String] { return ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"] }
+
     private var myCalendar: Calendar { return Calendar.current }
     private var myComponents: Set<Calendar.Component> {
         return [.year, .month, .day, .hour, .minute, .second, .weekOfYear, .weekday, .weekdayOrdinal]
     }
+
 }
 
 public extension GHDateExtension {
@@ -139,6 +142,30 @@ public extension GHDateExtension {
     func daysOfMonth() -> Int {
         let range = myCalendar.range(of: .day, in: .month, for: date)
         return range?.count ?? 28
+    }
+
+}
+
+public extension GHDateExtension {
+    /**
+     ["PHT": "Asia/Manila", "CEST": "Europe/Paris", "BDT": "Asia/Dhaka", "EET": "Europe/Athens", "EST": "America/New_York", "PKT": "Asia/Karachi", "WAT": "Africa/Lagos", "MST": "America/Phoenix", "EEST": "Europe/Athens", "WET": "Europe/Lisbon", "IRST": "Asia/Tehran", "KST": "Asia/Seoul", "ART": "America/Argentina/Buenos_Aires", "NST": "America/St_Johns", "UTC": "UTC", "WIT": "Asia/Jakarta", "NDT": "America/St_Johns", "BRST": "America/Sao_Paulo", "MDT": "America/Denver", "ICT": "Asia/Bangkok", "CDT": "America/Chicago", "WEST": "Europe/Lisbon", "SGT": "Asia/Singapore", "AKDT": "America/Juneau", "CST": "America/Chicago", "AKST": "America/Juneau", "PDT": "America/Los_Angeles", "MSK": "Europe/Moscow", "AST": "America/Halifax", "CAT": "Africa/Harare", "GMT": "GMT", "NZST": "Pacific/Auckland", "JST": "Asia/Tokyo", "ADT": "America/Halifax", "PST": "America/Los_Angeles", "EAT": "Africa/Addis_Ababa", "IST": "Asia/Kolkata", "TRT": "Europe/Istanbul", "PET": "America/Lima", "BST": "Europe/London", "EDT": "America/New_York", "HST": "Pacific/Honolulu", "BRT": "America/Sao_Paulo", "NZDT": "Pacific/Auckland", "CLT": "America/Santiago", "GST": "Asia/Dubai", "HKT": "Asia/Hong_Kong", "CLST": "America/Santiago", "MSD": "Europe/Moscow", "CET": "Europe/Paris", "COT": "America/Bogota"]
+     */
+    static var TimeZoneAbbreviationDictionary: [String: String] {
+        return TimeZone.abbreviationDictionary
+    }
+
+    /// 纽约时间
+    var toUSDate: Date {
+        if let secondFromGMT = TimeZone(abbreviation: "EST")?.secondsFromGMT(for: date) {
+            return date.addingTimeInterval(TimeInterval(secondFromGMT))
+        }
+        return date
+    }
+
+    /// 纽约时间
+    func toCurrentTimeZoneDate() -> Date? {
+        let secondFromGMT = TimeZone.current.secondsFromGMT(for: date)
+        return date.addingTimeInterval(TimeInterval(secondFromGMT))
     }
 
 }

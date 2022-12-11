@@ -53,7 +53,7 @@ public extension GHTKStringExtension {
         return bundle.path(forResource: LanguageType.en.rawValue, ofType: "lproj")
     }
 
-    static func localized(_ bundle: Bundle = Bundle.main, table: String = "Localizable", _ key: String, _ args: CVarArg..., fallback value: String = "") -> String {
+    static func localized(bundle: Bundle = Bundle.main, table: String = "Localizable", key: String, args: CVarArg..., fallback value: String = "") -> String {
         let format = bundle.localizedString(forKey: key, value: value, table: table)
         return String(format: format, locale: Locale.current, arguments: args)
     }
