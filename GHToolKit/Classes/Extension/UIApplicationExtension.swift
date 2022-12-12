@@ -26,6 +26,8 @@ public struct GHUIApplicationExtension {
 
 
 public extension GHUIApplicationExtension {
+
+    @available(iOSApplicationExtension, unavailable)
     func openUrl(_ urlStr: String?) {
         guard let string = urlStr, let url = URL(string: string) else {
             return
@@ -33,11 +35,12 @@ public extension GHUIApplicationExtension {
         openUrl(url)
     }
 
+    @available(iOSApplicationExtension, unavailable)
     func openUrl(_ url: URL) {
         application.open(url, options: [:], completionHandler: nil)
     }
 
-
+    @available(iOSApplicationExtension, unavailable)
     func openEmailSetting() {
         openUrl("MESSAGE://")
     }
