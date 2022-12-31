@@ -10,34 +10,45 @@ import Foundation
 // swiftlint:disable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:disable nesting type_body_length type_name vertical_whitespace_opening_braces
 public enum GHToolKitString {
-  /// Are you sure to delete the project?
-  public static let alertDeleteProjectTitle = GHToolKitString.tr("Localizable", "alert_delete_project_title")
-  /// Exit without saving
-  public static let alertNotSaveProjectActionSubmit = GHToolKitString.tr("Localizable", "alert_not_save_project_action_submit")
-  /// Are you sure to exit without saving?
-  public static let alertNotSaveProjectMsg = GHToolKitString.tr("Localizable", "alert_not_save_project_msg")
-  /// Photo Not Saved
-  public static let alertNotSaveProjectTitle = GHToolKitString.tr("Localizable", "alert_not_save_project_title")
+  /// week
+  public static let week = GHToolKitString.tr("Localizable", "week")
+  /// month
+  public static let month = GHToolKitString.tr("Localizable", "month")
+
   /// Cancel
   public static let cancel = GHToolKitString.tr("Localizable", "cancel")
   /// Continue
   public static let `continue` = GHToolKitString.tr("Localizable", "continue")
-  /// Select a photo and let the magic happen
-  public static let createTipsSubtitle = GHToolKitString.tr("Localizable", "create_tips_subtitle")
-  /// Let’s go!
-  public static let createTipsTitle = GHToolKitString.tr("Localizable", "create_tips_title")
   /// Delete
   public static let delete = GHToolKitString.tr("Localizable", "delete")
   /// Dismiss
   public static let dismiss = GHToolKitString.tr("Localizable", "dismiss")
+  /// OK
+  public static let ok = GHToolKitString.tr("Localizable", "ok")
+
+  /// Version
+  public static let version = GHToolKitString.tr("Localizable", "version")
+  /// Weekly
+  public static let weekly = GHToolKitString.tr("Localizable", "weekly")
+    /// Monthly
+    public static let monthly = GHToolKitString.tr("Localizable", "monthly")
+    
+
+  /// Are you sure to delete the project?
+  public static let deleteProjectTitle = GHToolKitString.tr("Localizable", "delete_project_title")
+  /// Exit without saving
+  public static let discardProjectTitle = GHToolKitString.tr("Localizable", "discard_project_title")
+  /// Are you sure to exit without saving?
+  public static let withoutSavingTitle = GHToolKitString.tr("Localizable", "without_saving_title")
+
   /// Save Image
-  public static let enhanceResultListChannelTitle1 = GHToolKitString.tr("Localizable", "enhance_result_list_channel_title_1")
+  public static let saveImageTitle = GHToolKitString.tr("Localizable", "save_image_title")
   /// Share to Instagram
-  public static let enhanceResultListChannelTitle2 = GHToolKitString.tr("Localizable", "enhance_result_list_channel_title_2")
+  public static let shareToInstagramTitle = GHToolKitString.tr("Localizable", "share_to_instagram_title")
   /// More
-  public static let enhanceResultListChannelTitle3 = GHToolKitString.tr("Localizable", "enhance_result_list_channel_title_3")
+  public static let moreTitle = GHToolKitString.tr("Localizable", "more_title")
   /// Save Video
-  public static let enhanceResultListChannelTitle4 = GHToolKitString.tr("Localizable", "enhance_result_list_channel_title_4")
+  public static let saveVideoTitle = GHToolKitString.tr("Localizable", "save_video_title")
   /// Result 1
   public static let enhanceResultSegementTitle1 = GHToolKitString.tr("Localizable", "enhance_result_segement_title_1")
   /// Result 2
@@ -89,12 +100,8 @@ public enum GHToolKitString {
   public static let launchPurchaseUnlockTips = GHToolKitString.tr("Localizable", "launch_purchase_unlock_tips")
   /// Unlock unlimited photo enhancements
   public static let launchPurchaseUnlockTitle = GHToolKitString.tr("Localizable", "launch_purchase_unlock_title")
-  /// Monthly
-  public static let monthly = GHToolKitString.tr("Localizable", "monthly")
   /// Get More
   public static let more = GHToolKitString.tr("Localizable", "more")
-  /// OK
-  public static let ok = GHToolKitString.tr("Localizable", "ok")
   /// Please don’t close App or lock your device
   public static let prepareEnhanceSubtitle = GHToolKitString.tr("Localizable", "prepare_enhance_subtitle")
   /// Preparing your image...
@@ -116,17 +123,15 @@ public enum GHToolKitString {
   /// Without ads and limits
   public static let previewSaveWithoutAdsSubtitle = GHToolKitString.tr("Localizable", "preview_save_without_ads_subtitle")
   /// Save without ads
-  public static let previewSaveWithoutAdsTitle = GHToolKitString.tr("Localizable", "preview_save_without_ads_title")
+  public static let saveWithoutAdsTitle = GHToolKitString.tr("Localizable", "save_without_ads_title")
   /// Privacy Policy
   public static let privacyPolicy = GHToolKitString.tr("Localizable", "privacy_policy")
-  /// Watch a Video to Unlock Once
-  public static let purchaseEditLimitedActionAd = GHToolKitString.tr("Localizable", "purchase_edit_limited_action_ad")
   /// Get Unlimited Now
-  public static let purchaseEditLimitedActionGo = GHToolKitString.tr("Localizable", "purchase_edit_limited_action_go")
+  public static let unlimitedTitle = GHToolKitString.tr("Localizable", "unlimited_title")
   /// Upgrade to get unlimited photo enhancements.
   public static let purchaseEditLimitedSubtitle = GHToolKitString.tr("Localizable", "purchase_edit_limited_subtitle")
   /// You’re out of edits
-  public static let purchaseEditLimitedTitle = GHToolKitString.tr("Localizable", "purchase_edit_limited_title")
+  public static let outOfEditsTitle = GHToolKitString.tr("Localizable", "out_of_edits_title")
   /// Purchase failed, please check your Apple ID settings.
   public static let purchaseFailedTips = GHToolKitString.tr("Localizable", "purchase_failed_tips")
   /// Free
@@ -135,8 +140,6 @@ public enum GHToolKitString {
   public static func purchaseFreeFormat(_ p1: Any, _ p2: Any) -> String {
     return GHToolKitString.tr("Localizable", "purchase_free_format", String(describing: p1), String(describing: p2))
   }
-  /// month
-  public static let purchaseMonth = GHToolKitString.tr("Localizable", "purchase_month")
   /// Succeed in purchase
   public static let purchaseSuccess = GHToolKitString.tr("Localizable", "purchase_success")
   /// Enable free trial
@@ -145,8 +148,6 @@ public enum GHToolKitString {
   public static let purchaseTrialTitle = GHToolKitString.tr("Localizable", "purchase_trial_title")
   /// Not sure yet?
   public static let purchaseTrialTitle1 = GHToolKitString.tr("Localizable", "purchase_trial_title1")
-  /// week
-  public static let purchaseWeek = GHToolKitString.tr("Localizable", "purchase_week")
   /// Restore
   public static let restore = GHToolKitString.tr("Localizable", "restore")
   /// Failed to restore
@@ -197,10 +198,6 @@ public enum GHToolKitString {
   public static func userTrailBannerTitle(_ p1: Any) -> String {
     return GHToolKitString.tr("Localizable", "user_trail_banner_title", String(describing: p1))
   }
-  /// Version
-  public static let version = GHToolKitString.tr("Localizable", "version")
-  /// Weekly
-  public static let weekly = GHToolKitString.tr("Localizable", "weekly")
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:enable nesting type_body_length type_name vertical_whitespace_opening_braces

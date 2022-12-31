@@ -1,12 +1,42 @@
-// L10N_LANG_INCLUDE=pt-BR,ja,fr,ru,de,th,vi,zh-cn,zh-tw,id,ar,ko,es
+"week" = "周";
+"month" = "月";
 
-// Action
+"version" = "版本";
+
 "delete" = "删除";
 "cancel" = "取消";
 "dismiss" = "忽略";
 "submit_action_title" = "好的";
 "ok" = "OK";
-"more" = "获取更多";
+
+
+"privacy_policy" = "隐私条款";
+"terms_of_use" = "使用条款";
+
+"weekly" = "周套餐";
+"monthly" = "月";
+
+"unlimited_title" = "现在解锁";
+"purchase_success" = "购买成功";
+"purchase_failed_tips" = "购买失败，请检查您的Apple ID设置。";
+"restore_success" = "恢复购买成功";
+"restore_fail" = "恢复购买失败";
+"subscription_expired" = "订阅已过期";
+"purchase_free_format" = "%@天免费试用，然后 %@";
+"launch_purchase_unlock_title" = "解锁无限次照片增强";
+"launch_purchase_unlock_tips" = "让您的图片焕发光彩！";
+"continue" = "继续";
+"restore" = "恢复购买";
+
+"purchase_free" = "免费";
+"purchase_trial_title" = "免费试用已开启";
+"purchase_trial_title1" = "还没想好？";
+"purchase_trial_subtitle1" = "开启免费试用";
+
+
+
+
+
 
 // Banner
 "user_trail_banner_title" = "%@ 张图片";
@@ -18,17 +48,17 @@
 "create_tips_subtitle" = "选择一张照片，体验Pixelance的魔力";
 
 // UIAlertController
-"alert_delete_project_title" = "是否删除该项目？";
+"delete_project_title" = "是否删除该项目？";
 
 "alert_not_save_project_title" = "照片未保存";
-"alert_not_save_project_msg" = "是否放弃当前编辑流程？";
-"alert_not_save_project_action_submit" = "放弃并退出";
+"without_saving_title" = "是否放弃当前编辑流程？";
+"discard_project_title" = "放弃并退出";
 
 
 // Purchase Limited
-"purchase_edit_limited_title" = "您的免费次数已用完";
+"out_of_edits_title" = "您的免费次数已用完";
 "purchase_edit_limited_subtitle" = "升级以解锁无限次照片增强！";
-"purchase_edit_limited_action_go" = "现在解锁";
+
 "purchase_edit_limited_action_ad" = "观看视频解锁一次";
 
 // HUD
@@ -65,7 +95,7 @@
 
 "preview_save_title" = "保存";
 "preview_save_with_ad_title" = "观看广告";
-"preview_save_without_ads_title" = "去除广告";
+"save_without_ads_title" = "去除广告";
 "preview_save_without_ads_subtitle" = "去除广告和次数限制";
 
 
@@ -74,10 +104,10 @@
 "enhance_result_segement_title_2" = "结果 2";
 "enhance_result_segement_title_3" = "视频";
 
-"enhance_result_list_channel_title_1" = "保存照片";
-"enhance_result_list_channel_title_2" = "分享至Instagram";
-"enhance_result_list_channel_title_3" = "更多";
-"enhance_result_list_channel_title_4" = "保存视频";
+"save_image_title" = "保存照片";
+"share_to_instagram_title" = "分享至Instagram";
+"more_title" = "更多";
+"save_video_title" = "保存视频";
 
 // Prepare
 "prepare_enhance_title_step1" = "您的图片处理中...";
@@ -86,28 +116,7 @@
 
 "prepare_enhance_subtitle" = "请不要退出APP或锁屏";
 
-// Purchase
-"purchase_success" = "购买成功";
-"purchase_failed_tips" = "购买失败，请检查您的Apple ID设置。";
-"restore_success" = "恢复购买成功";
-"restore_fail" = "恢复购买失败";
-"subscription_expired" = "订阅已过期";
-"privacy_policy" = "隐私条款";
-"terms_of_use" = "使用条款";
-"purchase_week" = "周";
-"purchase_month" = "月";
-"weekly" = "周套餐";
-"monthly" = "月";
-"purchase_free_format" = "%@天免费试用，然后 %@";
-"launch_purchase_unlock_title" = "解锁无限次照片增强";
-"launch_purchase_unlock_tips" = "让您的图片焕发光彩！";
-"continue" = "继续";
-"restore" = "恢复购买";
 
-"purchase_free" = "免费";
-"purchase_trial_title" = "免费试用已开启";
-"purchase_trial_title1" = "还没想好？";
-"purchase_trial_subtitle1" = "开启免费试用";
 
 // Launch Guide
 "launch_guide_title_0" = "欢迎来到Pixelance！";
@@ -131,4 +140,3 @@
 "setting_vc_list_share_title" = "分享";
 "setting_vc_list_vip_title" = "无限次图片增强";
 
-"version" = "版本";
