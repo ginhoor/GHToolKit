@@ -176,8 +176,6 @@ public enum GHToolKitString {
   public static let settingVcListVipTitle = GHToolKitString.tr("Localizable", "setting_vc_list_vip_title")
   /// Setting
   public static let settingVcTitle = GHToolKitString.tr("Localizable", "setting_vc_title")
-  /// OK, got it
-  public static let submitActionTitle = GHToolKitString.tr("Localizable", "submit_action_title")
   /// Subscription expired
   public static let subscriptionExpired = GHToolKitString.tr("Localizable", "subscription_expired")
   /// Terms of Use
