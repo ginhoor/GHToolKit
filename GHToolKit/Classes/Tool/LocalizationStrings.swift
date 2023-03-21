@@ -30,8 +30,8 @@ public enum GHToolKitString {
   public static let version = GHToolKitString.tr("Localizable", "version")
   /// Weekly
   public static let weekly = GHToolKitString.tr("Localizable", "weekly")
-    /// Monthly
-    public static let monthly = GHToolKitString.tr("Localizable", "monthly")
+  /// Monthly
+  public static let monthly = GHToolKitString.tr("Localizable", "monthly")
     
 
   /// Are you sure to delete the project?

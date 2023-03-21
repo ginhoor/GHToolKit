@@ -38,11 +38,6 @@
 "purchase_trial_title1" = "Not sure yet?";
 "purchase_trial_subtitle1" = "Enable free trial";
 
-
-
-
-
-
 // HUD
 "hud_congratulations_title" = "Congratulations！";
 "hud_congratulations_subtitle" = "Your design has been saved";
@@ -67,19 +62,17 @@
 
 // tips
 "tips_vc_title" = "Tips for Best Results";
-"tips_vc_subtitle1" = "👏 Portrait, low-resolution and old photos";
+"tips_vc_subtitle1" = "✅ Portrait, low-resolution and old photos";
 "tips_vc_subtitle2" = "❌ High resolution, severaly damaged and difficult to recognize the face";
 
 // Preview
 "preview_rate_title" = "Rate the result";
 "preview_rate_finish_title" = "Thank you!";
 
-
 "preview_save_title" = "Save";
 "preview_save_with_ad_title" = "Watch an ad";
 "save_without_ads_title" = "Save without ads";
 "preview_save_without_ads_subtitle" = "Without ads and limits";
-
 
 // Result
 "enhance_result_segement_title_1" = "Result 1";
@@ -97,13 +90,6 @@
 "prepare_enhance_title_step3" = "Hold on a second.\nAI is reconstructing the details...";
 
 "prepare_enhance_subtitle" = "Please don’t close App or lock your device";
-
-
-// Launch Guide
-"launch_guide_title_0" = "Welcome to Pixelance!";
-"launch_guide_title_1" = "Enhance for Better Qualities";
-"launch_guide_title_2" = "Enhance for Special Moments";
-"launch_guide_title_3" = "Enhance for Valuable Memories";
 
 // Setting
 "setting_vc_title" = "Setting";

@@ -42,10 +42,6 @@
 "user_trail_banner_subtitle" = "免费次数: 剩余 %@ 张图片";
 "user_trail_banner_no_count_subtitle" = "免费次数用尽";
 
-// Home
-"create_tips_title" = "开始";
-"create_tips_subtitle" = "选择一张照片，体验Pixelance的魔力";
-
 // UIAlertController
 "delete_project_title" = "是否删除该项目？";
 
@@ -84,13 +80,12 @@
 
 // tips
 "tips_vc_title" = "使用小贴士";
-"tips_vc_subtitle1" = "👏 人像，低像素图片和老照片";
-"tips_vc_subtitle2" = "❌ 高清图片，严重损毁图片或无法识别面部的图片";
+"tips_vc_subtitle1" = "人像，低像素图片和老照片 ✅";
+"tips_vc_subtitle2" = "高清图片，严重损毁图片或无法识别面部的图片 ❌";
 
 // Preview
 "preview_rate_title" = "您满意当前的结果吗";
 "preview_rate_finish_title" = "谢谢！";
-
 
 "preview_save_title" = "保存";
 "preview_save_with_ad_title" = "观看广告";

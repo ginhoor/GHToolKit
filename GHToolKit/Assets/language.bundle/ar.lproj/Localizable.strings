@@ -1,0 +1,108 @@
+"week" = "أسبوع";
+"month" = "شهر";
+
+"version" = "النسخة";
+
+"delete" = "حذف";
+"cancel" = "إلغاء";
+"dismiss" = "تجاهل";
+"ok" = "موافق";
+
+"privacy_policy" = "سياسة الخصوصية";
+"terms_of_use" = "شروط الاستخدام";
+"weekly" = "أسبوعي";
+"monthly" = "شهري";
+
+"premium_title" = "النسخة المتميزة";
+
+"delete_project_title" = "هل أنت متأكد من حذف المشروع؟";
+"alert_not_save_project_title" = "الصورة لم تحفظ";
+"without_saving_title" = "هل أنت متأكد من الخروج بدون حفظ؟";
+"discard_project_title" = "الخروج بدون حفظ";
+
+"unlimited_title" = "احصل على النسخة غير المحدودة الآن";
+
+"purchase_success" = "تمت العملية بنجاح";
+"purchase_failed_tips" = "فشلت العملية، يرجى التحقق من إعدادات حساب آبل الخاص بك.";
+"restore_success" = "تمت الاستعادة بنجاح";
+"restore_fail" = "فشل الاستعادة";
+"subscription_expired" = "انتهت صلاحية الاشتراك";
+"purchase_free_format" = "مجاني لمدة %@ أيام، ثم %@";
+"launch_purchase_unlock_title" = "فتح تحسين الصور غير المحدود";
+"launch_purchase_unlock_tips" = "دع ذكرياتك تتألق مجددًا!";
+"continue" = "متابعة";
+"restore" = "استعادة";
+
+"purchase_free" = "مجاني";
+"purchase_trial_title" = "تم تمكين التجربة المجانية";
+"purchase_trial_title1" = "غير متأكد حتى الآن؟";
+"purchase_trial_subtitle1" = "تفعيل التجربة المجانية";
+
+// HUD
+"hud_congratulations_title" = "تهانينا!";
+"hud_congratulations_subtitle" = "تم حفظ تصميمك";
+
+"hud_progress_title" = "التقدم";
+
+"hud_error_offline" = "أنت غير متصل بالإنترنت، يرجى التحقق من اتصالك بالإنترنت.";
+"hud_error_photo_download" = "فشل تنزيل الصورة.\nيرجى المحاولة مرة أخرى في وقت لاحق.";
+
+"hud_error_title_5003" = "عفوا! فشل معالجة الصورة.";
+"hud_error_title_5004" = "عفوا! فشل تحميل الصورة.";
+"hud_error_title_5008" = "عفوا! لا يستطيع الذكاء الاصطناعي التعرف على صورتك بشكل صحيح.";
+"hud_error_title_network" = "عفوا! فشل معالجة الصورة.";
+"hud_error_title_server_universal" = "عفوا! خادم الذكاء الاصطناعي مشغول قليلا الآن.";
+"hud_error_title_client_universal" = "عفوا! فشل الوصول إلى الصورة.";
+
+"hud_error_subtitle_universal" = "يرجى المحاولة مرة أخرى في وقت لاحق.";
+"hud_error_subtitle_network" = "يرجى التحقق من اتصال الإنترنت الخاص بك.";
+
+"hud_ad_reward_failed" = "فشل";
+"hud_ad_reward_success" = "الصورة +%@";
+
+// نصائح
+"tips_vc_title" = "نصائح للحصول على أفضل النتائج";
+"tips_vc_subtitle1" = "صور البورتريه والصور ذات الدقة المنخفضة والقديمة ✅";
+"tips_vc_subtitle2" = "الصور ذات الدقة العالية والمتضررة بشدة والصعبة التعرف على الوجه ❌";
+
+// معاينة
+"preview_rate_title" = "تقييم النتيجة";
+"preview_rate_finish_title" = "شكرًا لك!";
+
+"preview_save_title" = "حفظ";
+"preview_save_with_ad_title" = "مشاهدة إعلان";
+"save_without_ads_title" = "الحفظ بدون إعلانات";
+"preview_save_without_ads_subtitle" = "بدون إعلانات وحدود";
+
+// النتيجة
+"enhance_result_segement_title_1" = "النتيجة 1";
+"enhance_result_segement_title_2" = "النتيجة 2";
+"enhance_result_segement_title_3" = "فيديو";
+
+"save_image_title" = "حفظ الصورة";
+"share_to_instagram_title" = "مشاركة على إنستجرام";
+"more_title" = "المزيد";
+"save_video_title" = "حفظ الفيديو";
+
+// التحضير
+"prepare_enhance_title_step1" = "جارٍ إعداد صورتك";
+"prepare_enhance_title_step2" = "كل شيء على ما يرام!\nالذكاء الاصطناعي يستعد فقط";
+"prepare_enhance_title_step3" = "انتظر لحظة.\nيقوم الذكاء الاصطناعي بإعادة بناء التفاصيل...";
+
+"prepare_enhance_subtitle" = "يرجى عدم إغلاق التطبيق أو قفل الجهاز";
+
+// الإعدادات
+"setting_vc_title" = "الإعدادات";
+"setting_vc_item_done_title" = "تم";
+
+"setting_vc_list_social_group_title" = "وسائل التواصل الاجتماعي";
+"setting_vc_list_instagram_title" = "إنستجرام";
+"setting_vc_list_facebook_title" = "فيسبوك";
+
+"setting_vc_list_support_group_title" = "المساعدة والدعم";
+"setting_vc_list_contact_us_title" = "اتصل بنا";
+"setting_vc_list_about_title" = "حول التطبيق";
+
+"setting_vc_list_rate_title" = "قيّم التطبيق";
+"setting_vc_list_share_title" = "شارك التطبيق";
+"setting_vc_list_vip_title" = "تحسين الصور غير محدود";
