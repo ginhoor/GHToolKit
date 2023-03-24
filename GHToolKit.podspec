@@ -40,7 +40,24 @@ TODO: Add long description of the pod here.
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  s.dependency 'AXVToolKit'
-  s.dependency 'KeychainAccess'
+
+  s.default_subspec = 'Core'
+
+  s.subspec 'Core' do |ss|
+    ss.source_files = 'GHToolKit/Classes/Core/**/*'
+    ss.dependency 'AXVToolKit'
+    ss.dependency 'KeychainAccess'
+  end
+
+  s.subspec 'Image' do |ss|
+    ss.source_files = 'GHToolKit/Classes/Sub/Image/**/*'
+    ss.dependency 'GHToolKit/Core'
+    ss.dependency 'SDWebImage'
+    # ss.resource_bundles = {
+    #   'AXVToolKit'=>['AXVToolKit/Assets/View/*.{xcassets}']
+    # }
+  end
+
+
 
 end
