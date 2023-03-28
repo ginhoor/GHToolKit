@@ -61,7 +61,7 @@ public enum GHToolKitString {
   public static func hudAdRewardSuccess(_ p1: Any) -> String {
     return GHToolKitString.tr("Localizable", "hud_ad_reward_success", String(describing: p1))
   }
-  /// Your design has been saved
+  /// Photo has been saved
   public static let hudCongratulationsSubtitle = GHToolKitString.tr("Localizable", "hud_congratulations_subtitle")
   /// Congratulations！
   public static let hudCongratulationsTitle = GHToolKitString.tr("Localizable", "hud_congratulations_title")

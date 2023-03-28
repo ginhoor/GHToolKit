@@ -40,7 +40,7 @@
 
 // HUD
 "hud_congratulations_title" = "Congratulations！";
-"hud_congratulations_subtitle" = "Your design has been saved";
+"hud_congratulations_subtitle" = "Photo has been saved";
 
 "hud_progress_title" = "Progress";
 
