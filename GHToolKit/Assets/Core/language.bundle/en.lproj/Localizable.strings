@@ -1,5 +1,9 @@
 "week" = "week";
 "month" = "month";
+"year" = "year";
+"weekly" = "Weekly";
+"monthly" = "Monthly";
+"annually" = "Annually";
 
 "version" = "Version";
 
@@ -10,8 +14,8 @@
 
 "privacy_policy" = "Privacy Policy";
 "terms_of_use" = "Terms of Use";
-"weekly" = "Weekly";
-"monthly" = "Monthly";
+
+
 
 "premium_title" = "PREMIUM";
 

@@ -1,5 +1,9 @@
 "week" = "أسبوع";
 "month" = "شهر";
+"year" = "سنة";
+"weekly" = "أسبوعي";
+"monthly" = "شهري";
+"annually" = "سنوي";
 
 "version" = "النسخة";
 
@@ -10,8 +14,6 @@
 
 "privacy_policy" = "سياسة الخصوصية";
 "terms_of_use" = "شروط الاستخدام";
-"weekly" = "أسبوعي";
-"monthly" = "شهري";
 
 "premium_title" = "النسخة المتميزة";
 

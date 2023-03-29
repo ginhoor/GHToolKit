@@ -30,9 +30,9 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '14.0'
   s.swift_version = '5.0'
-
-  s.source_files = 'GHToolKit/Classes/**/*'
-  s.resource     = 'GHToolKit/Assets/*'
+#
+#  s.source_files = 'GHToolKit/Classes/**/*'
+#  s.resource     = 'GHToolKit/Assets/*'
 
   # s.resource_bundles = {
   #   'GHToolKit' => ['GHToolKit/Assets/*.png']
@@ -45,6 +45,7 @@ TODO: Add long description of the pod here.
 
   s.subspec 'Core' do |ss|
     ss.source_files = 'GHToolKit/Classes/Core/**/*'
+    ss.resource     = 'GHToolKit/Assets/Core/*'
     ss.dependency 'AXVToolKit'
     ss.dependency 'KeychainAccess'
   end

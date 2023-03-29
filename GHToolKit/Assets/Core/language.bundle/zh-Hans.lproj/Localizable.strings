@@ -1,5 +1,9 @@
 "week" = "周";
 "month" = "月";
+"year" = "年";
+"weekly" = "周";
+"monthly" = "月";
+"annually" = "年";
 
 "version" = "版本";
 
@@ -8,12 +12,8 @@
 "dismiss" = "忽略";
 "ok" = "OK";
 
-
 "privacy_policy" = "隐私条款";
 "terms_of_use" = "使用条款";
-
-"weekly" = "周套餐";
-"monthly" = "月";
 
 "unlimited_title" = "现在解锁";
 "purchase_success" = "购买成功";
@@ -31,11 +31,6 @@
 "purchase_trial_title" = "免费试用已开启";
 "purchase_trial_title1" = "还没想好？";
 "purchase_trial_subtitle1" = "开启免费试用";
-
-
-
-
-
 
 // Banner
 "user_trail_banner_title" = "%@ 张图片";

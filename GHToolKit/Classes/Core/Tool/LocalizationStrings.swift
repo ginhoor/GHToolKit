@@ -14,7 +14,8 @@ public enum GHToolKitString {
   public static let week = GHToolKitString.tr("Localizable", "week")
   /// month
   public static let month = GHToolKitString.tr("Localizable", "month")
-
+  /// year
+  public static let year = GHToolKitString.tr("Localizable", "year")
   /// Cancel
   public static let cancel = GHToolKitString.tr("Localizable", "cancel")
   /// Continue
@@ -32,7 +33,9 @@ public enum GHToolKitString {
   public static let weekly = GHToolKitString.tr("Localizable", "weekly")
   /// Monthly
   public static let monthly = GHToolKitString.tr("Localizable", "monthly")
-    
+    /// Annually
+    public static let annually = GHToolKitString.tr("Localizable", "annually")
+
 
   /// Are you sure to delete the project?
   public static let deleteProjectTitle = GHToolKitString.tr("Localizable", "delete_project_title")
