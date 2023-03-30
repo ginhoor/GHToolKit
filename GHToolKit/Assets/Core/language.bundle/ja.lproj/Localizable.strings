@@ -54,6 +54,7 @@
 "setting_vc_list_rate_title" = "スピード";
 "setting_vc_list_share_title" = "共有";
 
-
 "thanks_for_feedback" = "フィードバックありがとうございます！";
 "email_setting_is_wrong_tips" = "電子メールサービスが正しくありません。設定でメールアカウントを確認してください。";
+
+"save_photo_title" = "写真を保存する"; // ja

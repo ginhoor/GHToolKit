@@ -56,3 +56,5 @@
 
 "thanks_for_feedback" = "피드백 감사합니다!";
 "email_setting_is_wrong_tips" = "이메일 서비스가 잘못되었습니다. 설정에서 이메일 계정을 확인하십시오.";
+
+"save_photo_title" = "사진 저장"; // ko
