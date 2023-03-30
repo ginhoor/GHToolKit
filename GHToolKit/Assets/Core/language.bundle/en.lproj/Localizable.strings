@@ -53,3 +53,6 @@
 "setting_vc_list_about_title" = "About";
 "setting_vc_list_rate_title" = "Rate";
 "setting_vc_list_share_title" = "Share";
+
+"thanks_for_feedback" = "Thanks for the feedback!";
+"email_setting_is_wrong_tips" = "Email service is incorrect, please check your email account in Settings.";

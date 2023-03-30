@@ -101,6 +101,10 @@ public enum GHToolKitString {
     public static let weekly = GHToolKitString.tr("Localizable", "weekly", fallback: "Weekly")
     /// year
     public static let year = GHToolKitString.tr("Localizable", "year", fallback: "year")
+    /// Thanks for the feedback!
+    public static let thanksForFeedback = GHToolKitString.tr("Localizable", "thanks_for_feedback", fallback: "Thanks for the feedback!")
+    /// Email service is incorrect, please check your email account in Settings.
+    public static let emailSettingIsWrongTips = GHToolKitString.tr("Localizable", "email_setting_is_wrong_tips", fallback: "Email service is incorrect, please check your email account in Settings.")
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:enable nesting type_body_length type_name vertical_whitespace_opening_braces

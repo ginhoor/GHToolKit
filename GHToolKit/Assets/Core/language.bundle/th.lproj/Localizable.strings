@@ -53,3 +53,7 @@
 "setting_vc_list_about_title" = "เกี่ยวกับ";
 "setting_vc_list_rate_title" = "ให้คะแนน";
 "setting_vc_list_share_title" = "แชร์";
+
+
+"thanks_for_feedback" = "ขอบคุณสำหรับคำติชม!";
+"email_setting_is_wrong_tips" = "บริการอีเมลไม่ถูกต้องโปรดตรวจสอบบัญชีอีเมลของคุณในการตั้งค่า";

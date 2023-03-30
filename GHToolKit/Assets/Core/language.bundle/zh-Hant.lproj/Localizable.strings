@@ -53,3 +53,6 @@
 "setting_vc_list_about_title" = "關於";
 "setting_vc_list_rate_title" = "評價";
 "setting_vc_list_share_title" = "分享";
+
+"thanks_for_feedback" = "感謝您的回饋！";
+"email_setting_is_wrong_tips" = "電子郵件服務不正確，請在設定中檢查您的電子郵件帳戶。";

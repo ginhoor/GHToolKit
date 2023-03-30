@@ -53,3 +53,6 @@
 "setting_vc_list_about_title" = "关于";
 "setting_vc_list_rate_title" = "评价";
 "setting_vc_list_share_title" = "分享";
+
+"email_setting_is_wrong_tips" = "邮件服务配置不正确, 请在系统设置中检查您的邮件账户.";
+"thanks_for_feedback" = "感谢您的反馈！";

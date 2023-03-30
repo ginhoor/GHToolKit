@@ -53,3 +53,6 @@
 "setting_vc_list_about_title" = "Sobre nosotros";
 "setting_vc_list_rate_title" = "Valorar";
 "setting_vc_list_share_title" = "Compartir";
+
+"thanks_for_feedback" = "¡Gracias por tus comentarios!";
+"email_setting_is_wrong_tips" = "El servicio de correo electrónico es incorrecto, por favor revise su cuenta de correo electrónico en Configuración.";

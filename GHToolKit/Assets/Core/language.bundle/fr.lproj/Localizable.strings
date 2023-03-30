@@ -53,3 +53,6 @@
 "setting_vc_list_about_title" = "Qui sommes nous";
 "setting_vc_list_rate_title" = "Notez";
 "setting_vc_list_share_title" = "Partagez";
+
+"thanks_for_feedback" = "Merci pour vos commentaires !";
+"email_setting_is_wrong_tips" = "Le service de messagerie électronique est incorrect, veuillez vérifier votre compte de messagerie électronique dans les paramètres.";
