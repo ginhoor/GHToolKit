@@ -57,4 +57,4 @@
 "email_setting_is_wrong_tips" = "邮件服务配置不正确, 请在系统设置中检查您的邮件账户.";
 "thanks_for_feedback" = "感谢您的反馈！";
 
-"save_photo_title" = "保存照片"; // zh-Hans
+"save_photo_title" = "保存照片";
