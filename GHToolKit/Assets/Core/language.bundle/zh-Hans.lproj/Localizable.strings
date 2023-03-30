@@ -4,65 +4,41 @@
 "weekly" = "周";
 "monthly" = "月";
 "annually" = "年";
-
-"version" = "版本";
+"lifetime" = "终身";
 
 "delete" = "删除";
 "cancel" = "取消";
 "dismiss" = "忽略";
+"continue" = "继续";
 "ok" = "OK";
+"more" = "更多";
 
+"version" = "版本";
 "privacy_policy" = "隐私条款";
 "terms_of_use" = "使用条款";
 
-"unlimited_title" = "现在解锁";
+"premium_title" = "高级版";
 "purchase_success" = "购买成功";
 "purchase_failed_tips" = "购买失败，请检查您的Apple ID设置。";
 "restore_success" = "恢复购买成功";
 "restore_fail" = "恢复购买失败";
 "subscription_expired" = "订阅已过期";
 "purchase_free_format" = "%@天免费试用，然后 %@";
-"launch_purchase_unlock_title" = "解锁无限次照片增强";
-"launch_purchase_unlock_tips" = "让您的图片焕发光彩！";
-"continue" = "继续";
 "restore" = "恢复购买";
 
-"purchase_free" = "免费";
-"purchase_trial_title" = "免费试用已开启";
-"purchase_trial_title1" = "还没想好？";
-"purchase_trial_subtitle1" = "开启免费试用";
-
-// Banner
-"user_trail_banner_title" = "%@ 张图片";
-"user_trail_banner_subtitle" = "免费次数: 剩余 %@ 张图片";
-"user_trail_banner_no_count_subtitle" = "免费次数用尽";
-
-// UIAlertController
-"delete_project_title" = "是否删除该项目？";
-
+"alert_alert_delete_project_title" = "是否删除该项目？";
 "alert_not_save_project_title" = "照片未保存";
-"without_saving_title" = "是否放弃当前编辑流程？";
-"discard_project_title" = "放弃并退出";
+"alert_not_save_project_msg" = "是否放弃当前编辑流程？";
+"alert_not_save_project_action_submit" = "放弃并退出";
 
 
-// Purchase Limited
-"out_of_edits_title" = "您的免费次数已用完";
-"purchase_edit_limited_subtitle" = "升级以解锁无限次照片增强！";
-
-"purchase_edit_limited_action_ad" = "观看视频解锁一次";
-
-// HUD
 "hud_congratulations_title" = "恭喜！";
 "hud_congratulations_subtitle" = "您的作品已保存";
 
 "hud_progress_title" = "处理中";
-
 "hud_error_offline" = "请检查您的网络";
 "hud_error_photo_download" = "图片下载失败\n请稍后重试";
 
-"hud_error_title_5003" = "图片加载失败";
-"hud_error_title_5004" = "图片下载失败";
-"hud_error_title_5008" = "无法正确识别您的图片";
 "hud_error_title_network" = "图片加载失败";
 "hud_error_title_server_universal" = "服务器繁忙，请稍后重试";
 "hud_error_title_client_universal" = "图片获取失败";
@@ -70,62 +46,10 @@
 "hud_error_subtitle_universal" = "请稍后重试";
 "hud_error_subtitle_network" = "请检查您的网络";
 
-"hud_ad_reward_failed" = "失败";
-"hud_ad_reward_success" = "图片 +%@";
 
-// tips
-"tips_vc_title" = "使用小贴士";
-"tips_vc_subtitle1" = "人像，低像素图片和老照片 ✅";
-"tips_vc_subtitle2" = "高清图片，严重损毁图片或无法识别面部的图片 ❌";
-
-// Preview
-"preview_rate_title" = "您满意当前的结果吗";
-"preview_rate_finish_title" = "谢谢！";
-
-"preview_save_title" = "保存";
-"preview_save_with_ad_title" = "观看广告";
-"save_without_ads_title" = "去除广告";
-"preview_save_without_ads_subtitle" = "去除广告和次数限制";
-
-
-// Result
-"enhance_result_segement_title_1" = "结果 1";
-"enhance_result_segement_title_2" = "结果 2";
-"enhance_result_segement_title_3" = "视频";
-
-"save_image_title" = "保存照片";
-"share_to_instagram_title" = "分享至Instagram";
-"more_title" = "更多";
-"save_video_title" = "保存视频";
-
-// Prepare
-"prepare_enhance_title_step1" = "您的图片处理中...";
-"prepare_enhance_title_step2" = "一切准备就绪\nAI正在努力处理您的图片...";
-"prepare_enhance_title_step3" = "请稍等\nAI正在重构图片细节...";
-
-"prepare_enhance_subtitle" = "请不要退出APP或锁屏";
-
-
-
-// Launch Guide
-"launch_guide_title_0" = "欢迎来到Pixelance！";
-"launch_guide_title_1" = "提高照片质量";
-"launch_guide_title_2" = "保存美好时刻";
-"launch_guide_title_3" = "唤起珍贵记忆";
-
-// Setting
 "setting_vc_title" = "设置";
 "setting_vc_item_done_title" = "完成";
-
-"setting_vc_list_social_group_title" = "社媒";
-"setting_vc_list_instagram_title" = "Instagram";
-"setting_vc_list_facebook_title" = "Facebook";
-
-"setting_vc_list_support_group_title" = "帮助与支持";
 "setting_vc_list_contact_us_title" = "联系我们";
 "setting_vc_list_about_title" = "关于";
-
 "setting_vc_list_rate_title" = "评价";
 "setting_vc_list_share_title" = "分享";
-"setting_vc_list_vip_title" = "无限次图片增强";
-

@@ -1,0 +1,55 @@
+"week" = "tuần";
+"month" = "Tháng";
+"year" = "năm";
+"weekly" = "Hàng tuần";
+"monthly" = "Tháng";
+"annually" = "Hàng năm";
+"lifetime" = "Trọn đời";
+
+"delete" = "Xóa";
+"cancel" = "Hủy";
+"dismiss" = "Bỏ qua";
+"continue" = "Tiếp tục";
+"ok" = "OK";
+"more" = "Hơn nữa";
+
+"version" = "Phiên bản";
+"privacy_policy" = "Chính sách bảo mật";
+"terms_of_use" = "Điều khoản sử dụng";
+
+"premium_title" = "CAO CẤP";
+"purchase_success" = "Mua hàng thành công";
+"purchase_failed_tips" = "Mua hàng thất bại, vui lòng kiểm tra Apple ID trong cài đặt.";
+"restore_success" = "Khôi phục thành công";
+"restore_fail" = "Khôi phục thất bại";
+"subscription_expired" = "Đăng ký hết hạn";
+"purchase_free_format" = "%@ ngày miễn phí, sau đó %@";
+"restore" = "Khôi phục";
+
+"alert_alert_delete_project_title" = "Bạn có chắc chắn xóa dự án không?";
+"alert_not_save_project_title" = "Ảnh chưa lưu";
+"alert_not_save_project_msg" = "Bạn có chắc chắn thoát mà không lưu?";
+"alert_not_save_project_action_submit" = "Thoát mà không lưu";
+
+
+"hud_congratulations_title" = "Xin chúc mừng!";
+"hud_congratulations_subtitle" = "Thiết kế của bạn đã được lưu";
+
+"hud_progress_title" = "Tiến triển";
+"hud_error_offline" = "Vui lòng kiểm tra mạng của bạn";
+"hud_error_photo_download" = "Tải hình thất bại\nVui lòng thử lại sau.";
+
+"hud_error_title_network" = "Kết nối mạng lỗi...";
+"hud_error_title_server_universal" = "Máy chủ đang bận, vui lòng thử lại sau.";
+"hud_error_title_client_universal" = "Thu thập hình ảnh không thành công.";
+
+"hud_error_subtitle_universal" = "Vui lòng thử lại sau";
+"hud_error_subtitle_network" = "Xin vui lòng kiểm tra kết nối Internet của bạn.";
+
+
+"setting_vc_title" = "Cài đặt";
+"setting_vc_item_done_title" = "Xong";
+"setting_vc_list_contact_us_title" = "Liện hệ chúng tôi";
+"setting_vc_list_about_title" = "Về";
+"setting_vc_list_rate_title" = "Tỷ lệ";
+"setting_vc_list_share_title" = "Chia sẻ";

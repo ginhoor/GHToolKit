@@ -1,0 +1,55 @@
+"week" = "週";
+"month" = "月";
+"year" = "年";
+"weekly" = "週";
+"monthly" = "月";
+"annually" = "毎年";
+"lifetime" = "一生";
+
+"delete" = "削除";
+"cancel" = "キャンセル";
+"dismiss" = "棄却";
+"continue" = "続ける";
+"ok" = "OK";
+"more" = "多くを得る";
+
+"version" = "バージョン";
+"privacy_policy" = "プライバシーポリシー";
+"terms_of_use" = "利用規約";
+
+"premium_title" = "プレミアム";
+"purchase_success" = "購入しました";
+"purchase_failed_tips" = "購入に失敗しました。Apple IDの設定をご確認ください。";
+"restore_success" = "リストアしました";
+"restore_fail" = "リストア失敗しました";
+"subscription_expired" = "購読期限が切れました";
+"purchase_free_format" = "%@ 日無料,まで %@";
+"restore" = "購入を戻す";
+
+"alert_alert_delete_project_title" = "本当にプロジェクトを削除していいですか？";
+"alert_not_save_project_title" = "写真は保存されていません";
+"alert_not_save_project_msg" = "保存せずに終了してよろしいですか？";
+"alert_not_save_project_action_submit" = "保存しないで終了";
+
+
+"hud_congratulations_title" = "おめでとう！";
+"hud_congratulations_subtitle" = "デザインが保存されました";
+
+"hud_progress_title" = "進歩する";
+"hud_error_offline" = "インターネットの接続を確認してください";
+"hud_error_photo_download" = "画像のダウンロードの失敗しました\nもう一度試してみてください";
+
+"hud_error_title_network" = "インターネット接続が遅い、または接続されていない。";
+"hud_error_title_server_universal" = "サーバーは今ちょっと忙しいです、後でもう一度試してみてください";
+"hud_error_title_client_universal" = "画像のアクセスに失敗しました";
+
+"hud_error_subtitle_universal" = "後でもう一度試してみてください";
+"hud_error_subtitle_network" = "インターネット接続を確認してくだだい";
+
+
+"setting_vc_title" = "設定";
+"setting_vc_item_done_title" = "完了";
+"setting_vc_list_contact_us_title" = "連絡します";
+"setting_vc_list_about_title" = "について";
+"setting_vc_list_rate_title" = "スピード";
+"setting_vc_list_share_title" = "共有";

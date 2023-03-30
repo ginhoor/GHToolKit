@@ -1,0 +1,55 @@
+"week" = "สัปดาห์";
+"month" = "เดือน";
+"year" = "ปี";
+"weekly" = "รายสัปดาห์";
+"monthly" = "รายเดือน";
+"annually" = "รายปี";
+"lifetime" = "ตลอดชีวิต";
+
+"delete" = "ลบ";
+"cancel" = "ยกเลิก";
+"dismiss" = "ยกเลิก";
+"continue" = "ดำเนินการต่อ";
+"ok" = "โอเค";
+"more" = "รับเพิ่มเติม";
+
+"version" = "เวอร์ชั่น";
+"privacy_policy" = "นโยบายความเป็นส่วนตัว";
+"terms_of_use" = "ข้อกำหนดการใช้งาน";
+
+"premium_title" = "พรีเมียม";
+"purchase_success" = "การชำระเงินสำเร็จ";
+"purchase_failed_tips" = "การชำระเงินล้มเหลว โปรดตรวจสอบการตั้งค่าของ Apple ID ของคุณ";
+"restore_success" = "กู้คืนสำเร็จ";
+"restore_fail" = "กู้คืนล้มเหลว";
+"subscription_expired" = "การสมัครหมดอายุ";
+"purchase_free_format" = "ฟรี %@ วัน หลังจากนั้น %@";
+"restore" = "กู้คืนสินค้า";
+
+"alert_alert_delete_project_title" = "คุณแน่ใจหรือว่าต้องการลบโปรเจกต์นี้?";
+"alert_not_save_project_title" = "ไม่ได้บันทึกรูปภาพ";
+"alert_not_save_project_msg" = "คุณแน่ใจหรือไม่ที่จะออกโดยไม่บันทึก";
+"alert_not_save_project_action_submit" = "ออกโดยไม่บันทึก";
+
+
+"hud_congratulations_title" = "ขอแสดงความยินดี";
+"hud_congratulations_subtitle" = "บันทึกการออกแบบของคุณแล้ว";
+
+"hud_progress_title" = "ความคืบหน้า";
+"hud_error_offline" = "คุณออฟไลน์อยู่ โปรดตรวจสอบการเชื่อมต่ออินเทอร์เน็ตของคุณ";
+"hud_error_photo_download" = "ดาวน์โหลดรูปภาพไม่สำเร็จ \nโปรดลองใหม่อีกครั้งภายหลัง";
+
+"hud_error_title_network" = "อุ๊บ! การเชื่อมต่ออินเทอร์เน็ตล่าช้าหรือไม่มีการเชื่อมต่อ";
+"hud_error_title_server_universal" = "เอ๊ะ! เซิร์ฟเวอร์ AI ยุ่งอยู่ในขณะนี้";
+"hud_error_title_client_universal" = "เอ๊ะ! เข้าถึงรูปภาพไม่สำเร็จ";
+
+"hud_error_subtitle_universal" = "โปรดลองอีกครั้งในภายหลัง";
+"hud_error_subtitle_network" = "โปรดตรวจสอบการเชื่อมต่ออินเทอร์เน็ตของคุณ";
+
+
+"setting_vc_title" = "การตั้งค่า";
+"setting_vc_item_done_title" = "ตกลง";
+"setting_vc_list_contact_us_title" = "ติดต่อเรา";
+"setting_vc_list_about_title" = "เกี่ยวกับ";
+"setting_vc_list_rate_title" = "ให้คะแนน";
+"setting_vc_list_share_title" = "แชร์";

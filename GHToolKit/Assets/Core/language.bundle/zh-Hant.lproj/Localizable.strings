@@ -1,0 +1,55 @@
+"week" = "周";
+"month" = "月";
+"year" = "年";
+"weekly" = "週套餐";
+"monthly" = "月";
+"annually" = "年";
+"lifetime" = "終身";
+
+"delete" = "刪除";
+"cancel" = "取消";
+"dismiss" = "忽略";
+"continue" = "繼續";
+"ok" = "OK";
+"more" = "更多";
+
+"version" = "版本";
+"privacy_policy" = "隱私協議";
+"terms_of_use" = "使用條款";
+
+"premium_title" = "高級版";
+"purchase_success" = "購買成功";
+"purchase_failed_tips" = "購買失敗，請檢查您的Apple ID設定。";
+"restore_success" = "恢復購買成功";
+"restore_fail" = "恢復購買失敗";
+"subscription_expired" = "訂閱已過期";
+"purchase_free_format" = "%@天免費試用，然後%@";
+"restore" = "恢復購買";
+
+"alert_alert_delete_project_title" = "是否刪除此項目？";
+"alert_not_save_project_title" = "照片未保存";
+"alert_not_save_project_msg" = "是否放棄此編輯流程？";
+"alert_not_save_project_action_submit" = "放弃并退出";
+
+
+"hud_congratulations_title" = "恭喜！";
+"hud_congratulations_subtitle" = "妳的作品已保存";
+
+"hud_progress_title" = "處理中";
+"hud_error_offline" = "請檢查網路";
+"hud_error_photo_download" = "圖片下載失敗\n請稍後再試";
+
+"hud_error_title_network" = "網絡連接好像有問題...";
+"hud_error_title_server_universal" = "服務器繁忙，請稍候重新嘗試。";
+"hud_error_title_client_universal" = "圖片獲取失敗";
+
+"hud_error_subtitle_universal" = "請稍後再試";
+"hud_error_subtitle_network" = "請檢查你的網路";
+
+
+"setting_vc_title" = "設置";
+"setting_vc_item_done_title" = "完成";
+"setting_vc_list_contact_us_title" = "聯繫我們";
+"setting_vc_list_about_title" = "關於";
+"setting_vc_list_rate_title" = "評價";
+"setting_vc_list_share_title" = "分享";

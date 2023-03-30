@@ -1,0 +1,55 @@
+"week" = "нед";
+"month" = "месяц";
+"year" = "год";
+"weekly" = "Еженедельный";
+"monthly" = "Ежемесячно";
+"annually" = "Ежегодно";
+"lifetime" = "Бессрочно";
+
+"delete" = "Удалить";
+"cancel" = "Отменить";
+"dismiss" = "Отклонить";
+"continue" = "Продолжить";
+"ok" = "OK";
+"more" = "Ещё";
+
+"version" = "Версия";
+"privacy_policy" = "Политика конфиденциальности";
+"terms_of_use" = "Условия пользования";
+
+"premium_title" = "ПРЕМИУМ";
+"purchase_success" = "Куплено";
+"purchase_failed_tips" = "Не удалось купить, пожалуйста, проверьте настройки Apple ID";
+"restore_success" = "Восстановлено";
+"restore_fail" = "Не удалось восстановить";
+"subscription_expired" = "Срок действия подписки истек";
+"purchase_free_format" = "%@ дн бесплатно, затем %@";
+"restore" = "Восстановить";
+
+"alert_alert_delete_project_title" = "Вы уверены, что хотите удалить проект?";
+"alert_not_save_project_title" = "Фото не сохранено";
+"alert_not_save_project_msg" = "Вы хотите выйти без сохранения?";
+"alert_not_save_project_action_submit" = "Выйти без сохранения";
+
+
+"hud_congratulations_title" = "Поздравляем!";
+"hud_congratulations_subtitle" = "Ваш дизайн сохранен";
+
+"hud_progress_title" = "Прогресс";
+"hud_error_offline" = "Нет сети, пожалуйста, проверьте подключение к Интернету.";
+"hud_error_photo_download" = "Не удалось скачать фото.\nПопробуйте позже.";
+
+"hud_error_title_network" = "Упс! Медленный интернет или его отсутствие.";
+"hud_error_title_server_universal" = "Упс! Сервер ИИ сейчас немного занят.";
+"hud_error_title_client_universal" = "Упс! Не удалось получить доступ к фото.";
+
+"hud_error_subtitle_universal" = "Пожалуйста, попробуйте позже";
+"hud_error_subtitle_network" = "Проверьте подключение к Интернету.";
+
+
+"setting_vc_title" = "Настройки";
+"setting_vc_item_done_title" = "Готово";
+"setting_vc_list_contact_us_title" = "Свяжитесь с нами";
+"setting_vc_list_about_title" = "О приложении";
+"setting_vc_list_rate_title" = "Оценить";
+"setting_vc_list_share_title" = "Поделиться";

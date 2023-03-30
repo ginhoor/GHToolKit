@@ -1,0 +1,55 @@
+"week" = "주";
+"month" = "월";
+"year" = "년";
+"weekly" = "주간";
+"monthly" = "매달";
+"annually" = "년";
+"lifetime" = "영구";
+
+"delete" = "삭제";
+"cancel" = "취소";
+"dismiss" = "닫기";
+"continue" = "계속";
+"ok" = "ㅇㅋ";
+"more" = "더 보기";
+
+"version" = "버전";
+"privacy_policy" = "개인 정보 보호 정책";
+"terms_of_use" = "이용 약관";
+
+"premium_title" = "프리미엄";
+"purchase_success" = "구매성공";
+"purchase_failed_tips" = "구입에 실패했습니다. Apple ID 설정을 확인하십시오.";
+"restore_success" = "구매복원성공";
+"restore_fail" = "구매복원실패";
+"subscription_expired" = "구독 만료";
+"purchase_free_format" = "%@일 무료 사용 후 %@";
+"restore" = "구매복원";
+
+"alert_alert_delete_project_title" = "프로젝트를 삭제하시겠습니까?";
+"alert_not_save_project_title" = "사진이 저장되지 않음";
+"alert_not_save_project_msg" = "저장하지 않고 종료하시겠습니까?";
+"alert_not_save_project_action_submit" = "저장하지 않고 종료";
+
+
+"hud_congratulations_title" = "축하합니다!";
+"hud_congratulations_subtitle" = "설계가 저장되었습니다.";
+
+"hud_progress_title" = "프로그레스";
+"hud_error_offline" = "인터넷 연결을 확인하십시오.";
+"hud_error_photo_download" = "이미지 다운로드에 실패했습니다.\n나중에 다시 시도해 주십시오.";
+
+"hud_error_title_network" = "네트워크 연결에 문제가 있는 것 같습니다";
+"hud_error_title_server_universal" = "서버가 사용 중입니다. 나중에 다시 시도하십시오";
+"hud_error_title_client_universal" = "이미지에 액세스하지 못했습니다.";
+
+"hud_error_subtitle_universal" = "나중에 다시 시도해 주십시오.";
+"hud_error_subtitle_network" = "인터넷 연결을 확인하십시오.";
+
+
+"setting_vc_title" = "설정";
+"setting_vc_item_done_title" = "완료";
+"setting_vc_list_contact_us_title" = "저희에게 연락하십시오";
+"setting_vc_list_about_title" = "대해서";
+"setting_vc_list_rate_title" = "평가하기";
+"setting_vc_list_share_title" = "공유하기";

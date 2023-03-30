@@ -1,0 +1,55 @@
+"week" = "Woche";
+"month" = "Monat";
+"year" = "Jahr";
+"weekly" = "Wöchentlich";
+"monthly" = "Monatlich";
+"annually" = "Jährlich";
+"lifetime" = "Lebenslang";
+
+"delete" = "Löschen";
+"cancel" = "Abbrechen";
+"dismiss" = "Verwerfen";
+"continue" = "Fortsetzen";
+"ok" = "Okay";
+"more" = "Mehr";
+
+"version" = "Version";
+"privacy_policy" = "Datenschutzerklärung";
+"terms_of_use" = "Nutzungsbedingungen";
+
+"premium_title" = "Premium";
+"purchase_success" = "Schon gekauf!";
+"purchase_failed_tips" = "Kann nicht kaufen. Prüf mal bitte deine Apple ID-Einstellungen";
+"restore_success" = "Erfolgreiche Wiederherstellung";
+"restore_fail" = "Fehlgeschlagene Wiederherstellung";
+"subscription_expired" = "Das Abonnement ist abgelaufen";
+"purchase_free_format" = "%@ Tage kostenlos, danach %@";
+"restore" = "Wiederherstellen";
+
+"alert_alert_delete_project_title" = "Sind Sie sicher, das Projekt zu löschen?";
+"alert_not_save_project_title" = "Foto wurde nicht gespeichert";
+"alert_not_save_project_msg" = "Sind Sie sicher ohne Speichern zu beenden?";
+"alert_not_save_project_action_submit" = "Ohne Speicherung beenden";
+
+
+"hud_congratulations_title" = "Glückwunsch!";
+"hud_congratulations_subtitle" = "Dein Design wurde gespeichert";
+
+"hud_progress_title" = "Verfahren";
+"hud_error_offline" = "Sie sind offline. Bitte überprüfen Sie die Internetverbindung.";
+"hud_error_photo_download" = "Fehler beim Herunterladen.\nBitte versuchen Sie später erneut.";
+
+"hud_error_title_network" = "Hoppla! Langsame oder keine Internetverbindung.";
+"hud_error_title_server_universal" = "Oops! Der AI-Server ist jetzt ein bisschen beschäftigt.";
+"hud_error_title_client_universal" = "Oops! Der Zugriff auf das Bild ist fehlgeschlagen.";
+
+"hud_error_subtitle_universal" = "Bitte versuchen Sie es später erneut";
+"hud_error_subtitle_network" = "Bitte überprüfen Sie die Internetverbindung.";
+
+
+"setting_vc_title" = "Einstellungen";
+"setting_vc_item_done_title" = "Fertig";
+"setting_vc_list_contact_us_title" = "Uns kontaktieren";
+"setting_vc_list_about_title" = "Über";
+"setting_vc_list_rate_title" = "Bewerten";
+"setting_vc_list_share_title" = "Teilen";

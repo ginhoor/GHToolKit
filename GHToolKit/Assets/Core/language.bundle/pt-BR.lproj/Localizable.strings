@@ -1,0 +1,55 @@
+"week" = "semana";
+"month" = "mês";
+"year" = "ano";
+"weekly" = "Semanal";
+"monthly" = "Mensal";
+"annually" = "Anual";
+"lifetime" = "Vitalício";
+
+"delete" = "Excluir";
+"cancel" = "Cancelar";
+"dismiss" = "Ignorar";
+"continue" = "Continuar";
+"ok" = "OK";
+"more" = "Mais";
+
+"version" = "Versão";
+"privacy_policy" = "Política de Privacidade";
+"terms_of_use" = "Termos de uso";
+
+"premium_title" = "PREMIUM";
+"purchase_success" = "Compra sucedida";
+"purchase_failed_tips" = "A compra falhou, por favor verifique as configurações da sua Apple ID.";
+"restore_success" = "Sucesso ao restaurar";
+"restore_fail" = "Falha ao restaurar";
+"subscription_expired" = "Assinatura expirada";
+"purchase_free_format" = "%@ dias grátis, depois %@";
+"restore" = "Restaurar";
+
+"alert_alert_delete_project_title" = "Tem certeza de que deseja excluir o projeto?";
+"alert_not_save_project_title" = "Foto não salva";
+"alert_not_save_project_msg" = "Tem certeza de sair sem salvar?";
+"alert_not_save_project_action_submit" = "Sair sem salvar";
+
+
+"hud_congratulations_title" = "Parabéns!";
+"hud_congratulations_subtitle" = "Seu design foi salvo";
+
+"hud_progress_title" = "Progresso";
+"hud_error_offline" = "Você está desconectado, por favor verifique a conexão internet.";
+"hud_error_photo_download" = "Falha ao baixar a imagem.\nTente novamente mais tarde.";
+
+"hud_error_title_network" = "Opa! Conexão de internet fraca.";
+"hud_error_title_server_universal" = "Opa! O servidor de IA está meio ocupado neste momento.";
+"hud_error_title_client_universal" = "Opa! Falha ao acessar a imagem.";
+
+"hud_error_subtitle_universal" = "Por favor, tente novamente mais tarde";
+"hud_error_subtitle_network" = "Verifique sua conexão internet.";
+
+
+"setting_vc_title" = "Configuração";
+"setting_vc_item_done_title" = "Pronto";
+"setting_vc_list_contact_us_title" = "Contate-nos";
+"setting_vc_list_about_title" = "Sobre";
+"setting_vc_list_rate_title" = "Avalie";
+"setting_vc_list_share_title" = "Compartilhe";
