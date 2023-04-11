@@ -39,7 +39,7 @@ public class GHKeyChainStore {
 extension GHKeyChainStore {
 
     public func deviceUUIDKey() -> String {
-        let bundleId = Bundle.main.bundleIdentifier ?? "com.SpringTech.NewSC"
+        let bundleId = Bundle.main.bundleIdentifier ?? "com.gh.default"
         return bundleId + ".uuidKey"
     }
 
