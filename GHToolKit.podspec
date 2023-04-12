@@ -50,15 +50,14 @@ TODO: Add long description of the pod here.
     ss.dependency 'KeychainAccess'
   end
 
-  s.subspec 'Image' do |ss|
-    ss.source_files = 'GHToolKit/Classes/Sub/Image/**/*'
+  s.subspec 'Common' do |ss|
+    ss.source_files = 'GHToolKit/Classes/Common/**/*'
     ss.dependency 'GHToolKit/Core'
     ss.dependency 'SDWebImage'
+    ss.dependency 'Alamofire'
     # ss.resource_bundles = {
     #   'AXVToolKit'=>['AXVToolKit/Assets/View/*.{xcassets}']
     # }
   end
-
-
 
 end
