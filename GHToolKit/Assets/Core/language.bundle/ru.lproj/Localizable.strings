@@ -39,11 +39,13 @@
 "hud_error_offline" = "Нет сети, пожалуйста, проверьте подключение к Интернету.";
 "hud_error_photo_download" = "Не удалось скачать фото.\nПопробуйте позже.";
 
-"hud_error_title_network" = "Упс! Медленный интернет или его отсутствие.";
-"hud_error_title_server_universal" = "Упс! Сервер ИИ сейчас немного занят.";
 "hud_error_title_client_universal" = "Упс! Не удалось получить доступ к фото.";
 
+
+"hud_error_title_server_universal" = "Сервер занят в данный момент."; // ru
 "hud_error_subtitle_universal" = "Пожалуйста, попробуйте позже";
+
+"hud_error_title_network" = "Упс! Медленный интернет или его отсутствие.";
 "hud_error_subtitle_network" = "Проверьте подключение к Интернету.";
 
 

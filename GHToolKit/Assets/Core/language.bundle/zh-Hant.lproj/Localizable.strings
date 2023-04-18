@@ -39,11 +39,12 @@
 "hud_error_offline" = "請檢查網路";
 "hud_error_photo_download" = "圖片下載失敗\n請稍後再試";
 
-"hud_error_title_network" = "網絡連接好像有問題...";
-"hud_error_title_server_universal" = "服務器繁忙，請稍候重新嘗試。";
 "hud_error_title_client_universal" = "圖片獲取失敗";
 
+"hud_error_title_server_universal" = "服務器繁忙";
 "hud_error_subtitle_universal" = "請稍後再試";
+
+"hud_error_title_network" = "網絡連接好像有問題...";
 "hud_error_subtitle_network" = "請檢查你的網路";
 
 

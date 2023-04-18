@@ -39,11 +39,12 @@
 "hud_error_offline" = "You’re offline, please check out your Internet connection.";
 "hud_error_photo_download" = "Image download failed.\nPlease try again later.";
 
-"hud_error_title_network" = "Oops! Image processing failed.";
-"hud_error_title_server_universal" = "Oops! AI server is a little bit busy now.";
 "hud_error_title_client_universal" = "Oops! Failed to access the image.";
 
+"hud_error_title_server_universal" = "Server is busy now.";
 "hud_error_subtitle_universal" = "Please try again later.";
+
+"hud_error_title_network" = "Oops! Image processing failed.";
 "hud_error_subtitle_network" = "Please check your internet connection.";
 
 

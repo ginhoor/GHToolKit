@@ -39,11 +39,13 @@
 "hud_error_offline" = "인터넷 연결을 확인하십시오.";
 "hud_error_photo_download" = "이미지 다운로드에 실패했습니다.\n나중에 다시 시도해 주십시오.";
 
-"hud_error_title_network" = "네트워크 연결에 문제가 있는 것 같습니다";
-"hud_error_title_server_universal" = "서버가 사용 중입니다. 나중에 다시 시도하십시오";
 "hud_error_title_client_universal" = "이미지에 액세스하지 못했습니다.";
 
+
+"hud_error_title_server_universal" = "현재 서버가 바쁩니다."; // ko
 "hud_error_subtitle_universal" = "나중에 다시 시도해 주십시오.";
+
+"hud_error_title_network" = "네트워크 연결에 문제가 있는 것 같습니다";
 "hud_error_subtitle_network" = "인터넷 연결을 확인하십시오.";
 
 

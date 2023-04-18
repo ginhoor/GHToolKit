@@ -31,7 +31,6 @@
 "alert_not_save_project_msg" = "是否放弃当前编辑流程？";
 "alert_not_save_project_action_submit" = "放弃并退出";
 
-
 "hud_congratulations_title" = "恭喜！";
 "hud_congratulations_subtitle" = "您的作品已保存";
 
@@ -39,13 +38,13 @@
 "hud_error_offline" = "请检查您的网络";
 "hud_error_photo_download" = "图片下载失败\n请稍后重试";
 
-"hud_error_title_network" = "图片加载失败";
-"hud_error_title_server_universal" = "服务器繁忙，请稍后重试";
 "hud_error_title_client_universal" = "图片获取失败";
 
+"hud_error_title_server_universal" = "服务器繁忙"; // zh-Hans
 "hud_error_subtitle_universal" = "请稍后重试";
-"hud_error_subtitle_network" = "请检查您的网络";
 
+"hud_error_title_network" = "图片加载失败";
+"hud_error_subtitle_network" = "请检查您的网络";
 
 "setting_vc_title" = "设置";
 "setting_vc_item_done_title" = "完成";

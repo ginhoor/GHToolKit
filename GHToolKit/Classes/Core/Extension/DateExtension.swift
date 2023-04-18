@@ -113,27 +113,36 @@ public extension GHDateExtension {
         case .month:
             interval += count * Double(Self.monthSeconds)
         }
-
         return Date(timeIntervalSinceReferenceDate: interval)
     }
 
-    func isSameDay(with date: Date) -> Bool { return abs(date.timeIntervalSince(date)) <= 86400 }
+    func isSameHour(with newDate: Date) -> Bool {
+        let components = myCalendar.dateComponents([.hour], from: newDate, to: date)
+        guard let diff = components.hour else { return false }
+        return diff == 0
+    }
 
-    func isSameWeek(as date: Date) -> Bool {
+    func isSameDay(with newDate: Date) -> Bool {
+        let components = myCalendar.dateComponents([.day], from: newDate, to: date)
+        guard let diff = components.day else { return false }
+        return diff == 0
+    }
+
+    func isSameWeek(as newDate: Date) -> Bool {
         let weekStart = startOfWeek
         let weekEnd = endOfWeek
-        if date.compare(weekStart) != .orderedAscending,
-           date.compare(weekEnd) != .orderedDescending {
+        if newDate.compare(weekStart) != .orderedAscending,
+           newDate.compare(weekEnd) != .orderedDescending {
             return true
         }
         return false
     }
 
-    func isSameMonth(as date: Date) -> Bool {
+    func isSameMonth(as newDate: Date) -> Bool {
         let monthStart = startOfMonth
         let monthEnd = endOfMonth
-        if date.compare(monthStart) != .orderedAscending,
-           date.compare(monthEnd) != .orderedDescending {
+        if newDate.compare(monthStart) != .orderedAscending,
+           newDate.compare(monthEnd) != .orderedDescending {
             return true
         }
         return false

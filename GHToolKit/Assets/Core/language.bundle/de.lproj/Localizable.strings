@@ -39,11 +39,13 @@
 "hud_error_offline" = "Sie sind offline. Bitte überprüfen Sie die Internetverbindung.";
 "hud_error_photo_download" = "Fehler beim Herunterladen.\nBitte versuchen Sie später erneut.";
 
-"hud_error_title_network" = "Hoppla! Langsame oder keine Internetverbindung.";
 "hud_error_title_server_universal" = "Oops! Der AI-Server ist jetzt ein bisschen beschäftigt.";
 "hud_error_title_client_universal" = "Oops! Der Zugriff auf das Bild ist fehlgeschlagen.";
 
+"hud_error_title_server_universal" = "Der Server ist derzeit beschäftigt."; // de
 "hud_error_subtitle_universal" = "Bitte versuchen Sie es später erneut";
+
+"hud_error_title_network" = "Hoppla! Langsame oder keine Internetverbindung.";
 "hud_error_subtitle_network" = "Bitte überprüfen Sie die Internetverbindung.";
 
 

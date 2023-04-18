@@ -39,11 +39,12 @@
 "hud_error_offline" = "インターネットの接続を確認してください";
 "hud_error_photo_download" = "画像のダウンロードの失敗しました\nもう一度試してみてください";
 
-"hud_error_title_network" = "インターネット接続が遅い、または接続されていない。";
-"hud_error_title_server_universal" = "サーバーは今ちょっと忙しいです、後でもう一度試してみてください";
 "hud_error_title_client_universal" = "画像のアクセスに失敗しました";
 
+"hud_error_title_server_universal" = "現在サーバーがビジーです。"; // ja
 "hud_error_subtitle_universal" = "後でもう一度試してみてください";
+
+"hud_error_title_network" = "インターネット接続が遅い、または接続されていない。";
 "hud_error_subtitle_network" = "インターネット接続を確認してくだだい";
 
 

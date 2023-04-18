@@ -37,14 +37,14 @@ public enum GHToolKitString {
     /// Image download failed.
     /// Please try again later.
     public static let hudErrorPhotoDownload = GHToolKitString.tr("Localizable", "hud_error_photo_download", fallback: "Image download failed.\nPlease try again later.")
+    /// Oops! Image processing failed.
+    public static let hudErrorTitleNetwork = GHToolKitString.tr("Localizable", "hud_error_title_network", fallback: "Oops! Image processing failed.")
     /// Please check your internet connection.
     public static let hudErrorSubtitleNetwork = GHToolKitString.tr("Localizable", "hud_error_subtitle_network", fallback: "Please check your internet connection.")
     /// Please try again later.
     public static let hudErrorSubtitleUniversal = GHToolKitString.tr("Localizable", "hud_error_subtitle_universal", fallback: "Please try again later.")
     /// Oops! Failed to access the image.
     public static let hudErrorTitleClientUniversal = GHToolKitString.tr("Localizable", "hud_error_title_client_universal", fallback: "Oops! Failed to access the image.")
-    /// Oops! Image processing failed.
-    public static let hudErrorTitleNetwork = GHToolKitString.tr("Localizable", "hud_error_title_network", fallback: "Oops! Image processing failed.")
     /// Oops! AI server is a little bit busy now.
     public static let hudErrorTitleServerUniversal = GHToolKitString.tr("Localizable", "hud_error_title_server_universal", fallback: "Oops! AI server is a little bit busy now.")
     /// Progress

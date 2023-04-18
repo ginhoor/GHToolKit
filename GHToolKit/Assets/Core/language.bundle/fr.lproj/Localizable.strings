@@ -39,11 +39,12 @@
 "hud_error_offline" = "Vous êtes hors ligne, veuillez vérifier votre connexion Internet.";
 "hud_error_photo_download" = "Le téléchargement de l'image a échoué.\nVeuillez réessayer plus tard.";
 
-"hud_error_title_network" = "Oups! Connexion internet faible.";
-"hud_error_title_server_universal" = "Oups! Le serveur d'IA est un peu occupé maintenant.";
 "hud_error_title_client_universal" = "Oups! Impossible d'accéder à l'image.";
 
+
+"hud_error_title_server_universal" = "Le serveur est occupé maintenant."; // fr
 "hud_error_subtitle_universal" = "Veuillez réessayer plus tard";
+"hud_error_title_network" = "Oups! Connexion internet faible.";
 "hud_error_subtitle_network" = "Veuillez vérifier votre connexion internet.";
 
 

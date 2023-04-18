@@ -39,13 +39,14 @@
 "hud_error_offline" = "คุณออฟไลน์อยู่ โปรดตรวจสอบการเชื่อมต่ออินเทอร์เน็ตของคุณ";
 "hud_error_photo_download" = "ดาวน์โหลดรูปภาพไม่สำเร็จ \nโปรดลองใหม่อีกครั้งภายหลัง";
 
-"hud_error_title_network" = "อุ๊บ! การเชื่อมต่ออินเทอร์เน็ตล่าช้าหรือไม่มีการเชื่อมต่อ";
-"hud_error_title_server_universal" = "เอ๊ะ! เซิร์ฟเวอร์ AI ยุ่งอยู่ในขณะนี้";
 "hud_error_title_client_universal" = "เอ๊ะ! เข้าถึงรูปภาพไม่สำเร็จ";
 
-"hud_error_subtitle_universal" = "โปรดลองอีกครั้งในภายหลัง";
-"hud_error_subtitle_network" = "โปรดตรวจสอบการเชื่อมต่ออินเทอร์เน็ตของคุณ";
 
+"hud_error_title_server_universal" = "เซิร์ฟเวอร์ไม่ว่างในขณะนี้"; // th
+"hud_error_subtitle_universal" = "โปรดลองอีกครั้งในภายหลัง";
+
+"hud_error_title_network" = "อุ๊บ! การเชื่อมต่ออินเทอร์เน็ตล่าช้าหรือไม่มีการเชื่อมต่อ";
+"hud_error_subtitle_network" = "โปรดตรวจสอบการเชื่อมต่ออินเทอร์เน็ตของคุณ";
 
 "setting_vc_title" = "การตั้งค่า";
 "setting_vc_item_done_title" = "ตกลง";

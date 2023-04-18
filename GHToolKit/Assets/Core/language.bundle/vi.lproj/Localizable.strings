@@ -39,11 +39,13 @@
 "hud_error_offline" = "Vui lòng kiểm tra mạng của bạn";
 "hud_error_photo_download" = "Tải hình thất bại\nVui lòng thử lại sau.";
 
-"hud_error_title_network" = "Kết nối mạng lỗi...";
-"hud_error_title_server_universal" = "Máy chủ đang bận, vui lòng thử lại sau.";
 "hud_error_title_client_universal" = "Thu thập hình ảnh không thành công.";
 
+
+"hud_error_title_server_universal" = "Máy chủ đang bận vào lúc này."; // vi
 "hud_error_subtitle_universal" = "Vui lòng thử lại sau";
+
+"hud_error_title_network" = "Kết nối mạng lỗi...";
 "hud_error_subtitle_network" = "Xin vui lòng kiểm tra kết nối Internet của bạn.";
 
 

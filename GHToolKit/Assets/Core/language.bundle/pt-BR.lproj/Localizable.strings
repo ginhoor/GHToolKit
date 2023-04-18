@@ -39,11 +39,12 @@
 "hud_error_offline" = "Você está desconectado, por favor verifique a conexão internet.";
 "hud_error_photo_download" = "Falha ao baixar a imagem.\nTente novamente mais tarde.";
 
-"hud_error_title_network" = "Opa! Conexão de internet fraca.";
-"hud_error_title_server_universal" = "Opa! O servidor de IA está meio ocupado neste momento.";
 "hud_error_title_client_universal" = "Opa! Falha ao acessar a imagem.";
 
+"hud_error_title_server_universal" = "O servidor está ocupado agora."; // pt-BR
 "hud_error_subtitle_universal" = "Por favor, tente novamente mais tarde";
+
+"hud_error_title_network" = "Opa! Conexão de internet fraca.";
 "hud_error_subtitle_network" = "Verifique sua conexão internet.";
 
 

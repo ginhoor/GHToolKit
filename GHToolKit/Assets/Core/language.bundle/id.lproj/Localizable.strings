@@ -39,11 +39,13 @@
 "hud_error_offline" = "Kamu sedang offline, silakan periksa sambungan internetmu.";
 "hud_error_photo_download" = "Pengunduhan gambar gagal.\nSilakan coba lagi nanti.";
 
-"hud_error_title_network" = "Ups! Internet lambat atau tidak tersedia";
-"hud_error_title_server_universal" = "Ups! Server AI sedang ramai sekarang.";
 "hud_error_title_client_universal" = "Ups! Gagal mengakses gambar.";
 
+
+"hud_error_title_server_universal" = "Server sedang sibuk saat ini."; // id
 "hud_error_subtitle_universal" = "Silakan coba lagi nanti";
+
+"hud_error_title_network" = "Ups! Internet lambat atau tidak tersedia";
 "hud_error_subtitle_network" = "Silakan periksa sambungan internetmu.";
 
 

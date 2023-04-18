@@ -32,7 +32,6 @@
 "alert_not_save_project_action_submit" = "الخروج بدون حفظ";
 
 
-
 "hud_congratulations_title" = "تهانينا!";
 "hud_congratulations_subtitle" = "تم حفظ تصميمك";
 
@@ -41,11 +40,11 @@
 "hud_error_photo_download" = "فشل تنزيل الصورة.\nيرجى المحاولة مرة أخرى في وقت لاحق.";
 
 "hud_error_title_network" = "عفوا! فشل معالجة الصورة.";
-"hud_error_title_server_universal" = "عفوا! خادم الذكاء الاصطناعي مشغول قليلا الآن.";
+"hud_error_subtitle_network" = "يرجى التحقق من اتصال الإنترنت الخاص بك.";
 "hud_error_title_client_universal" = "عفوا! فشل الوصول إلى الصورة.";
 
+"hud_error_title_server_universal" = "الخادم مشغول الآن."; // ar
 "hud_error_subtitle_universal" = "يرجى المحاولة مرة أخرى في وقت لاحق.";
-"hud_error_subtitle_network" = "يرجى التحقق من اتصال الإنترنت الخاص بك.";
 
 
 "setting_vc_title" = "الإعدادات";

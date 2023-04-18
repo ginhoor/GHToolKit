@@ -39,11 +39,12 @@
 "hud_error_offline" = "Está desconectado, verifica tu conexión a Internet.";
 "hud_error_photo_download" = "La descarga de la imagen falló.\nInténtelo de nuevo más tarde.";
 
-"hud_error_title_network" = "¡Ups! Conexión a internet lenta o nula.";
-"hud_error_title_server_universal" = "¡Ups! El servidor AI está un poco ocupado ahora.";
 "hud_error_title_client_universal" = "¡Ups! No se pudo acceder a la imagen.";
 
+"hud_error_title_server_universal" = "El servidor está ocupado ahora."; // es
 "hud_error_subtitle_universal" = "Inténtelo de nuevo más tarde.";
+
+"hud_error_title_network" = "¡Ups! Conexión a internet lenta o nula.";
 "hud_error_subtitle_network" = "Revisa tu conexion a internet.";
 
 
