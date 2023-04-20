@@ -95,3 +95,15 @@ public extension GHTKStringExtension {
     }
 }
 
+public extension GHTKStringExtension {
+    
+    static func randomFileName(length: Int, format: String) -> String {
+        let letters = "abcdefCutoutijklmnopqrstuvwxyzABCDEFCutoutIJKLMNOPQRSTUVWXYZ0123456789"
+        let finalLength = min(length, letters.count)
+        let randomStrs = String(letters.shuffled()).prefix(finalLength)
+        let timeInterval = String(format: "%.0f", Date().timeIntervalSince1970 * 1000)
+        let fileName = randomStrs + "-" + timeInterval
+        return fileName + "." + format
+    }
+
+}
