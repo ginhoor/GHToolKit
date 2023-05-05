@@ -26,7 +26,7 @@
 "purchase_free_format" = "%@ hari gratis, lalu %@";
 "restore" = "Pulihkan";
 
-"alert_alert_delete_project_title" = "Kamu yakin akan menghapus proyek?";
+"alert_delete_project_title" = "Kamu yakin akan menghapus proyek?";
 "alert_not_save_project_title" = "Foto Tidak Tersimpan";
 "alert_not_save_project_msg" = "Keluar tanpa menyimpan dulu?";
 "alert_not_save_project_action_submit" = "Keluar tanpa menyimpan";

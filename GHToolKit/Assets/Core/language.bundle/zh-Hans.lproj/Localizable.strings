@@ -26,7 +26,7 @@
 "purchase_free_format" = "%@天免费试用，然后 %@";
 "restore" = "恢复购买";
 
-"alert_alert_delete_project_title" = "是否删除该项目？";
+"alert_delete_project_title" = "是否删除该项目？";
 "alert_not_save_project_title" = "照片未保存";
 "alert_not_save_project_msg" = "是否放弃当前编辑流程？";
 "alert_not_save_project_action_submit" = "放弃并退出";
