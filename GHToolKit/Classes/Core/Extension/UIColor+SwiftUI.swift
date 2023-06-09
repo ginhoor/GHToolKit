@@ -18,5 +18,11 @@ public struct GHUIColorSwiftUIExt {
 }
 
 public extension GHUIColorSwiftUIExt {
-    var swiftUIColor: Color { return Color(uiColor: color) }
+    var swiftUIColor: Color {
+        if #available(iOS 15.0, *) {
+            return Color(uiColor: color)
+        } else {
+            fatalError("unsupport below iOS15.0")
+        }
+    }
 }
