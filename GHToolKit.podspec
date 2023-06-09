@@ -50,8 +50,8 @@ TODO: Add long description of the pod here.
     ss.dependency 'KeychainAccess'
   end
 
-  s.subspec 'Common' do |ss|
-    ss.source_files = 'GHToolKit/Classes/Common/**/*'
+  s.subspec 'Business' do |ss|
+    ss.source_files = 'GHToolKit/Classes/Business/**/*'
     ss.dependency 'GHToolKit/Core'
     ss.dependency 'SDWebImage'
     ss.dependency 'Alamofire'
