@@ -122,15 +122,15 @@ public extension SystemComponentManager {
     ///   - vc: 用于展示的ViewController
     ///   - appIconImage: 链接相关的图标，为nil时会使用appIcon的配置
     ///   - eventParams: 自定义事件参数
-    func shareApp(vc: UIViewController, appIconImage: UIImage? = nil, eventParams: [String: Any]? = nil) {
-        Task.detached {
+    func shareApp(from: UIViewController, appIconImage: UIImage? = nil, eventParams: [String: Any]? = nil) {
+        Task { @MainActor in
             var items = [Any]()
             if let url = URL(string: String(format: self.shareUrlPath, self.appStoreID)) {
                 items.append(url)
             }
-            if let activityVC = self.generateActivityVC(items: items, eventParams: eventParams) {
+            if let activityVC = self.generateActivityVC(from: from, items: items, eventParams: eventParams) {
                 Task { @MainActor in
-                    vc.present(activityVC, animated: true)
+                    from.present(activityVC, animated: true)
                 }
             }
         }
@@ -141,20 +141,18 @@ public extension SystemComponentManager {
     ///   - vc: 用于展示的ViewController
     ///   - items: 分享资源
     ///   - eventParams: 自定义事件参数
-    func shareApp(vc: UIViewController, items: [Any]?, eventParams: [String: Any]? = nil) {
-        Task.detached {
-            if let activityVC = self.generateActivityVC(items: items, eventParams: eventParams) {
+    func shareMore(from: UIViewController, items: [Any]?, eventParams: [String: Any]? = nil) {
+        Task { @MainActor in
+            if let activityVC = self.generateActivityVC(from: from, items: items, eventParams: eventParams) {
                 Task { @MainActor in
-                    // 加上sourceView避免iPad中崩溃
-                    activityVC.popoverPresentationController?.sourceView = vc.view
-                    vc.present(activityVC, animated: true)
+                    from.present(activityVC, animated: true)
                 }
             }
         }
     }
 
     @discardableResult
-    func generateActivityVC(items: [Any]?, eventParams: [String: Any]? = nil,
+    func generateActivityVC(from: UIViewController, items: [Any]?, eventParams: [String: Any]? = nil,
                             types: [UIActivity.ActivityType] = [.postToFacebook,
                                                                 .postToTwitter,
                                                                 .postToWeibo,
@@ -163,7 +161,11 @@ public extension SystemComponentManager {
                                                                 .copyToPasteboard],
                             completion: ((_ success: Bool, _ eventParams: [String: Any]?) -> Void)? = nil) -> UIActivityViewController? {
         guard let items = items else { return nil }
+
         let vc = UIActivityViewController(activityItems: items, applicationActivities: nil)
+        vc.popoverPresentationController?.sourceView = from.view
+        vc.popoverPresentationController?.sourceRect = CGRect(x: UIScreen.main.bounds.width / 2, y: UIScreen.main.bounds.height, width: 0, height: 0)
+        vc.popoverPresentationController?.permittedArrowDirections = UIPopoverArrowDirection.down
         vc.excludedActivityTypes = types
         vc.completionWithItemsHandler = { (type, complete, _, error) in
             completion?(complete, eventParams)
