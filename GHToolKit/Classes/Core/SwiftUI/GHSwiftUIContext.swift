@@ -24,7 +24,7 @@ public extension GHSwiftUIContext {
     }
 
     @discardableResult
-    static func presentView<T>(rootView: T, backgroundColor: UIColor = .clear, modalPresentationStyle: UIModalPresentationStyle = .overFullScreen, animated: Bool = false) -> UIHostingController<T>? {
+    static func presentView<T: View>(rootView: T, backgroundColor: UIColor = .clear, modalPresentationStyle: UIModalPresentationStyle = .overFullScreen, animated: Bool = false) -> UIHostingController<T>? {
         let vc = UIHostingController(rootView: rootView)
         vc.view.backgroundColor = backgroundColor
         vc.modalPresentationStyle = modalPresentationStyle
@@ -40,6 +40,24 @@ public extension GHSwiftUIContext {
         return true
     }
 }
+
+public extension GHSwiftUIContext {
+    static func insertView<T: View>(view: T, parentView: UIView, parentVC: UIViewController) -> UIHostingController<T> {
+        let hostingController = UIHostingController(rootView: view)
+        // 将 hostingController 添加到当前视图控制器中
+        parentVC.addChild(hostingController)
+        parentView.addSubview(hostingController.view)
+        hostingController.didMove(toParent: parentVC)
+        return hostingController
+    }
+}
+
+public extension UIViewController {
+    func insertView<T: View>(view: T, parentView: UIView) -> UIHostingController<T> {
+        return GHSwiftUIContext.insertView(view: view, parentView: parentView, parentVC: self)
+    }
+}
+
 
 public extension View {
     @ViewBuilder func ifIs<T>(_ condition: Bool, transform: (Self) -> T) -> some View where T: View {
