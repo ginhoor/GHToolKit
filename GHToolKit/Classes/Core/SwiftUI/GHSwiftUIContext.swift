@@ -67,7 +67,7 @@ public extension View {
             self
         }
     }
-    @ViewBuilder func ifElse<T:View,V:View>( _ condition:Bool,isTransform:(Self) -> T,elseTransform:(Self) -> V) -> some View {
+    @ViewBuilder func ifElse<T:View,V:View>( _ condition: Bool, isTransform: (Self) -> T, elseTransform: (Self) -> V) -> some View {
         if condition {
             isTransform(self)
         } else {
