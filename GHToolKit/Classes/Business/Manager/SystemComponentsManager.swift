@@ -122,7 +122,7 @@ public extension SystemComponentManager {
     ///   - vc: 用于展示的ViewController
     ///   - appIconImage: 链接相关的图标，为nil时会使用appIcon的配置
     ///   - eventParams: 自定义事件参数
-    func shareApp(from: UIViewController, appIconImage: UIImage? = nil, eventParams: [String: Any]? = nil) {
+    func shareApp(from: UIViewController, eventParams: [String: Any]? = nil) {
         Task { @MainActor in
             var items = [Any]()
             if let url = URL(string: String(format: self.shareUrlPath, self.appStoreID)) {
@@ -136,7 +136,7 @@ public extension SystemComponentManager {
         }
     }
 
-    /// 分享Appstore链接
+    /// 分享更多
     /// - Parameters:
     ///   - vc: 用于展示的ViewController
     ///   - items: 分享资源
