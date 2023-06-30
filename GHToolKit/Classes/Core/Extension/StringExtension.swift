@@ -59,36 +59,51 @@ public extension GHTKStringExtension {
     }
 }
 
+/// 如在label中渲染，则使用label的扩展进行计算更为精准。
 public extension GHTKStringExtension {
 
-    func widthToFit(font: UIFont, height: CGFloat) -> CGFloat {
+    func greatestFiniteMagnitude(font: UIFont, options: NSStringDrawingOptions? = nil) -> CGSize {
+        // swiftlint:disable line_length
+        let defaultOptions = NSStringDrawingOptions(rawValue: NSStringDrawingOptions.usesLineFragmentOrigin.rawValue | NSStringDrawingOptions.usesFontLeading.rawValue | NSStringDrawingOptions.truncatesLastVisibleLine.rawValue)
+        // swiftlint:enable line_length
+        let options = options ?? defaultOptions
+
+        let size = CGSize(width: CGFloat.greatestFiniteMagnitude, height: CGFloat.greatestFiniteMagnitude)
+        let boundingRect = str.boundingRect(with: size, options: options, attributes: [NSAttributedString.Key.font: font], context: nil)
+        return boundingRect.size
+    }
+
+    func widthToFit(font: UIFont, height: CGFloat, options: NSStringDrawingOptions? = nil) -> CGFloat {
         return widthToFit(attributes: [NSAttributedString.Key.font: font], height: height)
     }
 
-    func widthToFit(attributes: [NSAttributedString.Key: Any], height: CGFloat) -> CGFloat {
+    func widthToFit(attributes: [NSAttributedString.Key: Any], height: CGFloat, options: NSStringDrawingOptions? = nil) -> CGFloat {
         // swiftlint:disable line_length
-        let rawValue = NSStringDrawingOptions.usesLineFragmentOrigin.rawValue | NSStringDrawingOptions.usesFontLeading.rawValue | NSStringDrawingOptions.truncatesLastVisibleLine.rawValue
+        let defaultOptions = NSStringDrawingOptions(rawValue: NSStringDrawingOptions.usesLineFragmentOrigin.rawValue | NSStringDrawingOptions.usesFontLeading.rawValue | NSStringDrawingOptions.truncatesLastVisibleLine.rawValue)
         // swiftlint:enable line_length
-        let tempOptions = NSStringDrawingOptions(rawValue: rawValue)
+        let options = options ?? defaultOptions
+
         let size = NSString(string: str)
             .boundingRect(with: CGSize(width: CGFloat(MAXFLOAT), height: height),
-                          options: tempOptions,
+                          options: options,
                           attributes: attributes,
                           context: nil).size
         return size.width
     }
 
-    func heightToFit(font: UIFont, width: CGFloat) -> CGFloat {
+    func heightToFit(font: UIFont, width: CGFloat, options: NSStringDrawingOptions? = nil) -> CGFloat {
         return heightToFit(attributes: [NSAttributedString.Key.font: font], width: width)
     }
 
-    func heightToFit(attributes: [NSAttributedString.Key: Any], width: CGFloat) -> CGFloat {
+    func heightToFit(attributes: [NSAttributedString.Key: Any], width: CGFloat, options: NSStringDrawingOptions? = nil) -> CGFloat {
         // swiftlint:disable line_length
-        let tempOptions = NSStringDrawingOptions(rawValue: NSStringDrawingOptions.usesLineFragmentOrigin.rawValue | NSStringDrawingOptions.usesFontLeading.rawValue | NSStringDrawingOptions.truncatesLastVisibleLine.rawValue)
+        let defaultOptions = NSStringDrawingOptions(rawValue: NSStringDrawingOptions.usesLineFragmentOrigin.rawValue | NSStringDrawingOptions.usesFontLeading.rawValue | NSStringDrawingOptions.truncatesLastVisibleLine.rawValue)
         // swiftlint:enable line_length
+
+        let options = options ?? defaultOptions
         let size = NSString(string: str)
             .boundingRect(with: CGSize(width: width, height: CGFloat(MAXFLOAT)),
-                          options: tempOptions,
+                          options: options,
                           attributes: attributes,
                           context: nil).size
         return size.height
