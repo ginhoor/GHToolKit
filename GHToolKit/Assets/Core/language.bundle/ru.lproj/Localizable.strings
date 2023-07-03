@@ -25,12 +25,12 @@
 "subscription_expired" = "Срок действия подписки истек";
 "purchase_free_format" = "%@ дн бесплатно, затем %@";
 "restore" = "Восстановить";
+"try_free_and_subscribe" = "Попробуйте бесплатно и подпишитесь"; // ru
 
 "alert_delete_project_title" = "Вы уверены, что хотите удалить проект?";
 "alert_not_save_project_title" = "Фото не сохранено";
 "alert_not_save_project_msg" = "Вы хотите выйти без сохранения?";
 "alert_not_save_project_action_submit" = "Выйти без сохранения";
-
 
 "hud_congratulations_title" = "Поздравляем!";
 "hud_congratulations_subtitle" = "Ваш дизайн сохранен";
@@ -41,13 +41,11 @@
 
 "hud_error_title_client_universal" = "Упс! Не удалось получить доступ к фото.";
 
-
 "hud_error_title_server_universal" = "Сервер занят в данный момент."; // ru
 "hud_error_subtitle_universal" = "Пожалуйста, попробуйте позже";
 
 "hud_error_title_network" = "Упс! Медленный интернет или его отсутствие.";
 "hud_error_subtitle_network" = "Проверьте подключение к Интернету.";
-
 
 "setting_vc_title" = "Настройки";
 "setting_vc_item_done_title" = "Готово";

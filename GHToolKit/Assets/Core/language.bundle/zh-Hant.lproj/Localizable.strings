@@ -25,12 +25,12 @@
 "subscription_expired" = "訂閱已過期";
 "purchase_free_format" = "%@天免費試用，然後%@";
 "restore" = "恢復購買";
+"try_free_and_subscribe" = "嘗試免費並訂閱"; // zh-Hant
 
 "alert_delete_project_title" = "是否刪除此項目？";
 "alert_not_save_project_title" = "照片未保存";
 "alert_not_save_project_msg" = "是否放棄此編輯流程？";
 "alert_not_save_project_action_submit" = "放弃并退出";
-
 
 "hud_congratulations_title" = "恭喜！";
 "hud_congratulations_subtitle" = "妳的作品已保存";
@@ -46,7 +46,6 @@
 
 "hud_error_title_network" = "網絡連接好像有問題...";
 "hud_error_subtitle_network" = "請檢查你的網路";
-
 
 "setting_vc_title" = "設置";
 "setting_vc_item_done_title" = "完成";

@@ -25,12 +25,12 @@
 "subscription_expired" = "Assinatura expirada";
 "purchase_free_format" = "%@ dias grátis, depois %@";
 "restore" = "Restaurar";
+"try_free_and_subscribe" = "Experimente grátis e assine"; // pt-BR
 
 "alert_delete_project_title" = "Tem certeza de que deseja excluir o projeto?";
 "alert_not_save_project_title" = "Foto não salva";
 "alert_not_save_project_msg" = "Tem certeza de sair sem salvar?";
 "alert_not_save_project_action_submit" = "Sair sem salvar";
-
 
 "hud_congratulations_title" = "Parabéns!";
 "hud_congratulations_subtitle" = "Seu design foi salvo";
@@ -46,7 +46,6 @@
 
 "hud_error_title_network" = "Opa! Conexão de internet fraca.";
 "hud_error_subtitle_network" = "Verifique sua conexão internet.";
-
 
 "setting_vc_title" = "Configuração";
 "setting_vc_item_done_title" = "Pronto";

@@ -25,12 +25,12 @@
 "subscription_expired" = "การสมัครหมดอายุ";
 "purchase_free_format" = "ฟรี %@ วัน หลังจากนั้น %@";
 "restore" = "กู้คืนสินค้า";
+"try_free_and_subscribe" = "ลองใช้ฟรีและสมัครสมาชิก"; // th
 
 "alert_delete_project_title" = "คุณแน่ใจหรือว่าต้องการลบโปรเจกต์นี้?";
 "alert_not_save_project_title" = "ไม่ได้บันทึกรูปภาพ";
 "alert_not_save_project_msg" = "คุณแน่ใจหรือไม่ที่จะออกโดยไม่บันทึก";
 "alert_not_save_project_action_submit" = "ออกโดยไม่บันทึก";
-
 
 "hud_congratulations_title" = "ขอแสดงความยินดี";
 "hud_congratulations_subtitle" = "บันทึกการออกแบบของคุณแล้ว";
@@ -40,7 +40,6 @@
 "hud_error_photo_download" = "ดาวน์โหลดรูปภาพไม่สำเร็จ \nโปรดลองใหม่อีกครั้งภายหลัง";
 
 "hud_error_title_client_universal" = "เอ๊ะ! เข้าถึงรูปภาพไม่สำเร็จ";
-
 
 "hud_error_title_server_universal" = "เซิร์ฟเวอร์ไม่ว่างในขณะนี้"; // th
 "hud_error_subtitle_universal" = "โปรดลองอีกครั้งในภายหลัง";

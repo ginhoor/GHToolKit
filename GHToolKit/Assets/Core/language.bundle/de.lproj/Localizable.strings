@@ -25,12 +25,12 @@
 "subscription_expired" = "Das Abonnement ist abgelaufen";
 "purchase_free_format" = "%@ Tage kostenlos, danach %@";
 "restore" = "Wiederherstellen";
+"try_free_and_subscribe" = "Versuche es kostenlos und abonniere"; // de
 
 "alert_delete_project_title" = "Sind Sie sicher, das Projekt zu löschen?";
 "alert_not_save_project_title" = "Foto wurde nicht gespeichert";
 "alert_not_save_project_msg" = "Sind Sie sicher ohne Speichern zu beenden?";
 "alert_not_save_project_action_submit" = "Ohne Speicherung beenden";
-
 
 "hud_congratulations_title" = "Glückwunsch!";
 "hud_congratulations_subtitle" = "Dein Design wurde gespeichert";
@@ -47,7 +47,6 @@
 
 "hud_error_title_network" = "Hoppla! Langsame oder keine Internetverbindung.";
 "hud_error_subtitle_network" = "Bitte überprüfen Sie die Internetverbindung.";
-
 
 "setting_vc_title" = "Einstellungen";
 "setting_vc_item_done_title" = "Fertig";

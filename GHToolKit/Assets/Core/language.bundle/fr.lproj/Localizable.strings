@@ -25,12 +25,12 @@
 "subscription_expired" = "Abonnement expiré";
 "purchase_free_format" = "%@ jours gratuitement, et puis %@";
 "restore" = "Restaurer";
+"try_free_and_subscribe" = "Essayez gratuitement et abonnez-vous"; // fr
 
 "alert_delete_project_title" = "Êtes-vous sûr de supprimer le projet?";
 "alert_not_save_project_title" = "Photo non enregistrée";
 "alert_not_save_project_msg" = "Êtes-vous sûr de quitter sans enregistrer?";
 "alert_not_save_project_action_submit" = "Quitter sans sauvegarder";
-
 
 "hud_congratulations_title" = "Félicitations!";
 "hud_congratulations_subtitle" = "Votre conception a été enregistrée";
@@ -41,12 +41,10 @@
 
 "hud_error_title_client_universal" = "Oups! Impossible d'accéder à l'image.";
 
-
 "hud_error_title_server_universal" = "Le serveur est occupé maintenant."; // fr
 "hud_error_subtitle_universal" = "Veuillez réessayer plus tard";
 "hud_error_title_network" = "Oups! Connexion internet faible.";
 "hud_error_subtitle_network" = "Veuillez vérifier votre connexion internet.";
-
 
 "setting_vc_title" = "Paramètre";
 "setting_vc_item_done_title" = "OK";

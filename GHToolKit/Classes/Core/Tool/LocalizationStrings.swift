@@ -24,6 +24,8 @@ public enum GHToolKitString {
     public static let cancel = GHToolKitString.tr("Localizable", "cancel", fallback: "Cancel")
     /// Continue
     public static let `continue` = GHToolKitString.tr("Localizable", "continue", fallback: "Continue")
+    /// Try Free and Subscribe
+    public static let tryFreeAndSubscribe = GHToolKitString.tr("Localizable", "try_free_and_subscribe", fallback: "Try Free and Subscribe")
     /// Delete
     public static let delete = GHToolKitString.tr("Localizable", "delete", fallback: "Delete")
     /// Dismiss

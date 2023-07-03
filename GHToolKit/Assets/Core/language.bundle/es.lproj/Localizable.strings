@@ -25,12 +25,12 @@
 "subscription_expired" = "La suscripción expiró";
 "purchase_free_format" = "%@ días gratis, luego %@";
 "restore" = "Restaurar";
+"try_free_and_subscribe" = "Prueba gratis y suscríbete"; // es
 
 "alert_delete_project_title" = "¿Estás seguro de eliminar el proyecto?";
 "alert_not_save_project_title" = "Foto no guardada";
 "alert_not_save_project_msg" = "¿Estás seguro de salir sin guardar?";
 "alert_not_save_project_action_submit" = "Salir sin guardar";
-
 
 "hud_congratulations_title" = "¡Felicidades!";
 "hud_congratulations_subtitle" = "Tu diseño ha sido guardado";
@@ -46,7 +46,6 @@
 
 "hud_error_title_network" = "¡Ups! Conexión a internet lenta o nula.";
 "hud_error_subtitle_network" = "Revisa tu conexion a internet.";
-
 
 "setting_vc_title" = "Ajustes";
 "setting_vc_item_done_title" = "Hecho";
