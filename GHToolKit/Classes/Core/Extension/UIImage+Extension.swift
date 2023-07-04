@@ -33,3 +33,38 @@ public extension GHTKUIImageExtension {
         }
     }
 }
+
+public extension GHTKUIImageExtension {
+
+    func scaleIfNeeded(maxInputImageSize: CGFloat? = nil, hasAlpha: Bool? = nil) -> UIImage {
+        var isOpaque = img.getImageFormat() != .PNG
+        if let hasAlpha = hasAlpha {
+            isOpaque = !hasAlpha
+        }
+
+        var actualSize = img.size
+        if let maxInputImageSize = maxInputImageSize {
+            let scaleSize = CGSize(width: maxInputImageSize, height: maxInputImageSize)
+            if max(img.size.width, img.size.height) > maxInputImageSize {
+                actualSize = img.size.axv.scaleAspectFit(wrapperSize: scaleSize)
+            }
+        }
+        return img.axv
+            .redraw(actualSize: actualSize, isOpaque: isOpaque, scale: 1) ?? img
+    }
+
+    func scaleIfNeeded(specificSize: CGSize? = nil, hasAlpha: Bool? = nil) -> UIImage {
+        var isOpaque = img.getImageFormat() != .PNG
+        if let hasAlpha = hasAlpha {
+            isOpaque = !hasAlpha
+        }
+
+        var actualSize = img.size
+        if let specificSize = specificSize {
+            actualSize = specificSize
+        }
+        return img.axv
+            .redraw(actualSize: actualSize, isOpaque: isOpaque, scale: 1) ?? img
+    }
+
+}
