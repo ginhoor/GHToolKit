@@ -9,12 +9,10 @@ import Foundation
 import MessageUI
 //import GHViewKit
 import AXVToolKit
-//import GHToolKit
 import Alamofire
 import StoreKit
 
 public enum SystemComponentPreference: String {
-
     /// 最近一次 请求应用内评分
     case latestReqeustRateDisplayDate
     /// 最近一次 显示应用内评分
@@ -124,7 +122,7 @@ public extension SystemComponentManager {
     }
 
 
-    func openAppstoreRatePage(intervalOfHours: Int = 24 * 15, completion: ((Bool) -> Void)? = nil) {
+    func openAppstoreRatePage(completion: ((Bool) -> Void)? = nil) {
         let now = Date.now.timeIntervalSince1970
         if let reqDate = SystemComponentPreference.latestReqeustOpenAppstoreRatePageDate.object as? Date,
            now - reqDate.timeIntervalSince1970 <= reqeustOpenAppstoreRatePageInterval {
