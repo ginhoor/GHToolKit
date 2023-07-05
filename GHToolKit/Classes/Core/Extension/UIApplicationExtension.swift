@@ -28,16 +28,16 @@ public struct GHUIApplicationExtension {
 public extension GHUIApplicationExtension {
 
     @available(iOSApplicationExtension, unavailable)
-    func openUrl(_ urlStr: String?) {
+    func openUrl(_ urlStr: String?, completion: ((Bool) -> Void)? = nil) {
         guard let string = urlStr, let url = URL(string: string) else {
             return
         }
-        openUrl(url)
+        openUrl(url, completion: completion)
     }
 
     @available(iOSApplicationExtension, unavailable)
-    func openUrl(_ url: URL) {
-        application.open(url, options: [:], completionHandler: nil)
+    func openUrl(_ url: URL, completion: ((Bool) -> Void)? = nil) {
+        application.open(url, options: [:], completionHandler: completion)
     }
 
     @available(iOSApplicationExtension, unavailable)

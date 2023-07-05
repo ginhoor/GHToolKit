@@ -14,8 +14,15 @@ import Alamofire
 import StoreKit
 
 public enum SystemComponentPreference: String {
-    /// 最近一次显示评分视图的日期
-    case lastestRateDisplayDate
+
+    /// 最近一次 请求应用内评分
+    case latestReqeustRateDisplayDate
+    /// 最近一次 显示应用内评分
+    case latestRateDisplayDate
+    /// 最近一次 请求App Store评论
+    case latestReqeustOpenAppstoreRatePageDate
+    /// 最近一次 打开App Store评论
+    case latestOpenAppstoreRatePageDate
 }
 
 extension SystemComponentPreference: UserDefaultPreference { }
@@ -28,6 +35,12 @@ public class SystemComponentManager: NSObject {
     public var appStoreID: String = ""
     public var feedbackEmail: String = ""
     public var appIcon: UIImage?
+
+    public var reqeustRateDisplayInterval: TimeInterval = 24 * 60 * 60 * 1000
+    public var showRateDisplayInterval: TimeInterval = 7 * 24 * 60 * 60 * 1000
+
+    public var reqeustOpenAppstoreRatePageInterval: TimeInterval = 24 * 60 * 60 * 1000
+    public var openAppstoreRatePageInterval: TimeInterval = 15 * 24 * 60 * 60 * 1000
 
     public let rateUrlFormat: String = "itms-apps://itunes.apple.com/app/id%@?mt=8&action=write-review"
     public let subscriptionUrlPath: String = "https://apps.apple.com/account/subscriptions"
@@ -75,44 +88,96 @@ extension SystemComponentManager: MFMailComposeViewControllerDelegate {
 public extension SystemComponentManager {
 
     func showRateAlert(completion: ((Bool) -> Void)? = nil) {
-        guard SystemComponentPreference.lastestRateDisplayDate.object == nil else {
-            completion?(false)
+        let now = Date.now.timeIntervalSince1970
+        if let reqDate = SystemComponentPreference.latestReqeustRateDisplayDate.object as? Date,
+           now - reqDate.timeIntervalSince1970 <= reqeustRateDisplayInterval {
+            DispatchQueue.main.async {
+                completion?(false)
+            }
             return
         }
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-            self.showRate(completion: completion)
-        }
-    }
 
-    private func showRate(completion: ((Bool) -> Void)? = nil) {
-        guard let manager = networkManager, manager.isReachable else {
-            completion?(false)
+        SystemComponentPreference.latestReqeustRateDisplayDate.save(object: Date())
+        if let actionDate = SystemComponentPreference.latestRateDisplayDate.object as? Date,
+           now - actionDate.timeIntervalSince1970 <= showRateDisplayInterval {
+            DispatchQueue.main.async {
+                completion?(false)
+            }
             return
         }
-        let request = AF.request("http://apple.com", method: .get) { $0.timeoutInterval = 3 }
-        request.response { (response) in
-            switch response.result {
-            case .success:
-                SystemComponentPreference.lastestRateDisplayDate.save(object: Date())
+
+        DispatchQueue.global().asyncAfter(deadline: .now() + 1) {
+            self.checkNetwork { success in
+                guard success else {
+                    completion?(false)
+                    return
+                }
+                SystemComponentPreference.latestRateDisplayDate.save(object: Date())
                 if let scene = UIApplication.shared.connectedScenes.first(where: { $0.activationState == .foregroundActive }) as? UIWindowScene {
                     SKStoreReviewController.requestReview(in: scene)
                     completion?(true)
                     return
                 }
                 completion?(false)
-            case .failure:
-                completion?(false)
             }
         }
     }
 
-    func openAppstoreRatePage() {
-        UIApplication.shared.gh.openUrl(String(format: rateUrlFormat, appStoreID))
+
+    func openAppstoreRatePage(intervalOfHours: Int = 24 * 15, completion: ((Bool) -> Void)? = nil) {
+        let now = Date.now.timeIntervalSince1970
+        if let reqDate = SystemComponentPreference.latestReqeustOpenAppstoreRatePageDate.object as? Date,
+           now - reqDate.timeIntervalSince1970 <= reqeustOpenAppstoreRatePageInterval {
+            DispatchQueue.main.async {
+                completion?(false)
+            }
+            return
+        }
+
+        SystemComponentPreference.latestReqeustOpenAppstoreRatePageDate.save(object: Date())
+        if let actionDate = SystemComponentPreference.latestOpenAppstoreRatePageDate.object as? Date,
+           now - actionDate.timeIntervalSince1970 <= openAppstoreRatePageInterval {
+            DispatchQueue.main.async {
+                completion?(false)
+            }
+            return
+        }
+
+        checkNetwork { [weak self] success in
+            guard let self = self else { return }
+            guard success else {
+                completion?(false)
+                return
+            }
+            SystemComponentPreference.latestOpenAppstoreRatePageDate.save(object: Date())
+            UIApplication.shared.gh.openUrl(String(format: self.rateUrlFormat, self.appStoreID), completion: completion)
+        }
     }
 
     func openAppstoreSubscriptionPage() {
         UIApplication.shared.gh.openUrl(subscriptionUrlPath)
     }
+
+    private func checkNetwork(completion: @escaping (Bool) -> Void) {
+        guard let manager = networkManager, manager.isReachable else {
+            DispatchQueue.main.async {
+                completion(false)
+            }
+            return
+        }
+        let request = AF.request("http://apple.com", method: .options) { $0.timeoutInterval = 3 }
+        request.response { (response) in
+            DispatchQueue.main.async {
+                switch response.result {
+                case .success:
+                    completion(true)
+                case .failure:
+                    completion(false)
+                }
+            }
+        }
+    }
+
 }
 
 public extension SystemComponentManager {
