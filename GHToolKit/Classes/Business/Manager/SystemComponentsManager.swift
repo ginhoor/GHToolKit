@@ -13,12 +13,10 @@ import Alamofire
 import StoreKit
 
 public enum SystemComponentPreference: String {
-    /// 最近一次 请求应用内评分
-    case latestReqeustRateDisplayDate
+    /// 最近一次 请求评分
+    case latestRequestRateDisplayDate
     /// 最近一次 显示应用内评分
     case latestRateDisplayDate
-    /// 最近一次 请求App Store评论
-    case latestReqeustOpenAppstoreRatePageDate
     /// 最近一次 打开App Store评论
     case latestOpenAppstoreRatePageDate
 }
@@ -34,11 +32,11 @@ public class SystemComponentManager: NSObject {
     public var feedbackEmail: String = ""
     public var appIcon: UIImage?
 
-    public var reqeustRateDisplayInterval: TimeInterval = 24 * 60 * 60 * 1000
-    public var showRateDisplayInterval: TimeInterval = 7 * 24 * 60 * 60 * 1000
+    public var requestRateDisplayInterval: TimeInterval = Double(Date.Axv.daySeconds) * 1000
+    public var showRateDisplayInterval: TimeInterval = 15 * Double(Date.Axv.daySeconds) * 1000
 
-    public var reqeustOpenAppstoreRatePageInterval: TimeInterval = 24 * 60 * 60 * 1000
-    public var openAppstoreRatePageInterval: TimeInterval = 15 * 24 * 60 * 60 * 1000
+    public var requestOpenAppstoreRatePageInterval: TimeInterval = Double(Date.Axv.daySeconds) * 1000
+    public var openAppstoreRatePageInterval: TimeInterval = 15 * Double(Date.Axv.daySeconds) * 1000
 
     public let rateUrlFormat: String = "itms-apps://itunes.apple.com/app/id%@?mt=8&action=write-review"
     public let subscriptionUrlPath: String = "https://apps.apple.com/account/subscriptions"
@@ -87,20 +85,17 @@ public extension SystemComponentManager {
 
     func showRateAlert(completion: ((Bool) -> Void)? = nil) {
         let now = Date.now.timeIntervalSince1970
-        if let reqDate = SystemComponentPreference.latestReqeustRateDisplayDate.object as? Date,
-           now - reqDate.timeIntervalSince1970 <= reqeustRateDisplayInterval {
-            DispatchQueue.main.async {
-                completion?(false)
-            }
+        /// 请求时间超过1天
+        if let reqDate = SystemComponentPreference.latestRequestRateDisplayDate.object as? Date,
+           now - reqDate.timeIntervalSince1970 <= requestRateDisplayInterval {
+            DispatchQueue.main.async { completion?(false) }
             return
         }
-
-        SystemComponentPreference.latestReqeustRateDisplayDate.save(object: Date())
+        SystemComponentPreference.latestRequestRateDisplayDate.save(object: Date())
+        /// 距离上次评分超过 15 天
         if let actionDate = SystemComponentPreference.latestRateDisplayDate.object as? Date,
            now - actionDate.timeIntervalSince1970 <= showRateDisplayInterval {
-            DispatchQueue.main.async {
-                completion?(false)
-            }
+            DispatchQueue.main.async { completion?(false) }
             return
         }
 
@@ -124,20 +119,19 @@ public extension SystemComponentManager {
 
     func openAppstoreRatePage(completion: ((Bool) -> Void)? = nil) {
         let now = Date.now.timeIntervalSince1970
-        if let reqDate = SystemComponentPreference.latestReqeustOpenAppstoreRatePageDate.object as? Date,
-           now - reqDate.timeIntervalSince1970 <= reqeustOpenAppstoreRatePageInterval {
+        /// 请求时间超过1天
+        if let reqDate = SystemComponentPreference.latestRequestRateDisplayDate.object as? Date,
+           now - reqDate.timeIntervalSince1970 <= requestOpenAppstoreRatePageInterval {
             DispatchQueue.main.async {
                 completion?(false)
             }
             return
         }
-
-        SystemComponentPreference.latestReqeustOpenAppstoreRatePageDate.save(object: Date())
+        SystemComponentPreference.latestRequestRateDisplayDate.save(object: Date())
+        /// 距离上次评分超过 15 天
         if let actionDate = SystemComponentPreference.latestOpenAppstoreRatePageDate.object as? Date,
            now - actionDate.timeIntervalSince1970 <= openAppstoreRatePageInterval {
-            DispatchQueue.main.async {
-                completion?(false)
-            }
+            DispatchQueue.main.async { completion?(false) }
             return
         }
 
@@ -158,9 +152,7 @@ public extension SystemComponentManager {
 
     private func checkNetwork(completion: @escaping (Bool) -> Void) {
         guard let manager = networkManager, manager.isReachable else {
-            DispatchQueue.main.async {
-                completion(false)
-            }
+            DispatchQueue.main.async { completion(false) }
             return
         }
         let request = AF.request("http://apple.com", method: .options) { $0.timeoutInterval = 3 }

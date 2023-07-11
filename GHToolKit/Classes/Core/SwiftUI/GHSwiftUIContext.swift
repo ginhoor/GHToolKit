@@ -34,9 +34,9 @@ public extension GHSwiftUIContext {
     }
 
     @discardableResult
-    static func dismissCurrentVC(animated: Bool = false, completion: ()) -> Bool {
+    static func dismissCurrentVC(animated: Bool = false, completion: (() -> Void)? = nil) -> Bool {
         guard let rootViewController = UIViewController.Axv.currentViewController else { return false }
-        rootViewController.dismiss(animated: animated)
+        rootViewController.dismiss(animated: animated, completion: completion)
         return true
     }
 }
