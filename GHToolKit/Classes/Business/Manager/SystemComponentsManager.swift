@@ -7,7 +7,6 @@
 
 import Foundation
 import MessageUI
-//import GHViewKit
 import AXVToolKit
 import Alamofire
 import StoreKit
@@ -218,11 +217,7 @@ public extension SystemComponentManager {
         guard let items = items else { return nil }
 
         let vc = UIActivityViewController(activityItems: items, applicationActivities: nil)
-        if let popover = vc.popoverPresentationController {
-            popover.sourceView = from.view
-            popover.sourceRect = CGRect(x: UIScreen.main.bounds.width / 2, y: UIScreen.main.bounds.height, width: 0, height: 0)
-            popover.permittedArrowDirections = UIPopoverArrowDirection.down
-        }
+        vc.gh.sampleAdjustForIpad(from.view)
         vc.excludedActivityTypes = types
         vc.completionWithItemsHandler = { (type, complete, _, error) in
             completion?(complete, eventParams)
