@@ -218,9 +218,11 @@ public extension SystemComponentManager {
         guard let items = items else { return nil }
 
         let vc = UIActivityViewController(activityItems: items, applicationActivities: nil)
-        vc.popoverPresentationController?.sourceView = from.view
-        vc.popoverPresentationController?.sourceRect = CGRect(x: UIScreen.main.bounds.width / 2, y: UIScreen.main.bounds.height, width: 0, height: 0)
-        vc.popoverPresentationController?.permittedArrowDirections = UIPopoverArrowDirection.down
+        if let popover = vc.popoverPresentationController {
+            popover.sourceView = from.view
+            popover.sourceRect = CGRect(x: UIScreen.main.bounds.width / 2, y: UIScreen.main.bounds.height, width: 0, height: 0)
+            popover.permittedArrowDirections = UIPopoverArrowDirection.down
+        }
         vc.excludedActivityTypes = types
         vc.completionWithItemsHandler = { (type, complete, _, error) in
             completion?(complete, eventParams)
