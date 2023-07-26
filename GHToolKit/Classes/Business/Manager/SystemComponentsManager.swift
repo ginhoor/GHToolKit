@@ -84,7 +84,7 @@ extension SystemComponentManager: MFMailComposeViewControllerDelegate {
 public extension SystemComponentManager {
 
     func showRateAlert(completion: ((Bool) -> Void)? = nil) {
-        let now = Date.now.timeIntervalSince1970
+        let now = Date().timeIntervalSince1970
         /// 请求时间超过1天
         if let reqDate = SystemComponentPreference.latestRequestRateDisplayDate.object as? Date,
            now - reqDate.timeIntervalSince1970 <= requestRateDisplayInterval {
@@ -118,7 +118,7 @@ public extension SystemComponentManager {
 
 
     func openAppstoreRatePage(completion: ((Bool) -> Void)? = nil) {
-        let now = Date.now.timeIntervalSince1970
+        let now = Date().timeIntervalSince1970
         /// 请求时间超过1天
         if let reqDate = SystemComponentPreference.latestRequestRateDisplayDate.object as? Date,
            now - reqDate.timeIntervalSince1970 <= requestOpenAppstoreRatePageInterval {
