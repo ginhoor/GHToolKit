@@ -58,3 +58,7 @@
 "email_setting_is_wrong_tips" = "Layanan email tidak benar, silakan periksa akun email Anda di Pengaturan.";
 
 "save_photo_title" = "Simpan Foto";
+
+"original" = "Asli"; // id
+"freeform" = "Bebas"; // id
+"square" = "Persegi"; // id

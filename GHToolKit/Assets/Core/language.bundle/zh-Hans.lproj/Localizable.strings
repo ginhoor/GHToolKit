@@ -58,3 +58,7 @@
 "thanks_for_feedback" = "感谢您的反馈！";
 
 "save_photo_title" = "保存照片";
+
+"original" = "原始"; // zh-Hans
+"freeform" = "自由形式"; // zh-Hans
+"square" = "正方形"; // zh-Hans

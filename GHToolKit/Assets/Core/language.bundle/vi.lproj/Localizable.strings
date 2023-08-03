@@ -58,3 +58,8 @@
 "email_setting_is_wrong_tips" = "Dịch vụ email không chính xác, vui lòng kiểm tra tài khoản email của bạn trong Cài đặt.";
 
 "save_photo_title" = "Lưu ảnh";
+
+"original" = "Bản gốc"; // vi
+"freeform" = "Hình dạng tự do"; // vi
+"square" = "Hình vuông"; // vi
+

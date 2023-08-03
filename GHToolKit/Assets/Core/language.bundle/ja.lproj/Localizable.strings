@@ -58,3 +58,7 @@
 "email_setting_is_wrong_tips" = "電子メールサービスが正しくありません。設定でメールアカウントを確認してください。";
 
 "save_photo_title" = "写真を保存する";
+
+"original" = "オリジナル"; // ja
+"freeform" = "フリーフォーム"; // ja
+"square" = "正方形"; // ja

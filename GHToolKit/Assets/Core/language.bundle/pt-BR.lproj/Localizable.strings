@@ -58,3 +58,7 @@
 "email_setting_is_wrong_tips" = "O serviço de e-mail está incorreto, verifique sua conta de e-mail nas Configurações.";
 
 "save_photo_title" = "Salvar Foto";
+
+"original" = "Original"; // pt-BR
+"freeform" = "Forma Livre"; // pt-BR
+"square" = "Quadrado"; // pt-BR

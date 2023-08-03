@@ -58,5 +58,9 @@
 "thanks_for_feedback" = "Vielen Dank für das Feedback!";
 "email_setting_is_wrong_tips" = "E-Mail-Dienst ist inkorrekt, bitte überprüfen Sie Ihr E-Mail-Konto in den Einstellungen.";
 
-
 "save_photo_title" = "Foto speichern";
+
+"original" = "Original"; // de
+"freeform" = "Freiform"; // de
+"square" = "Quadrat"; // de
+
