@@ -32,13 +32,13 @@ public struct GHUIViewControllerExtension {
 }
 
 public extension GHUIViewControllerExtension {
-    func sampleAdjustForIpad(_ targetView: UIView, _ permittedArrowDirections: UIPopoverArrowDirection = .down) {
+    func sampleAdjustForIpad(_ targetView: UIView, _ permittedArrowDirections: UIPopoverArrowDirection = .any) {
         if let popover = vc.popoverPresentationController {
             popover.sourceView = targetView
             if targetView.bounds == .zero {
-                popover.sourceRect = CGRect(x: 0, y: 0, width: GlobalValue.screenWidth, height: GlobalValue.screenHeight)
+                popover.sourceRect = CGRect(x: GlobalValue.screenWidth / 2, y: GlobalValue.screenHeight / 2, width: 0, height: 0)
             } else {
-                popover.sourceRect = targetView.bounds
+                popover.sourceRect = CGRect(x: targetView.bounds.width / 2, y: targetView.bounds.height / 2, width: 0, height: 0)
             }
             popover.permittedArrowDirections = permittedArrowDirections
         }

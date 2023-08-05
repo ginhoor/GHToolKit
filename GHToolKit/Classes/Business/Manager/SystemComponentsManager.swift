@@ -48,6 +48,7 @@ public extension SystemComponentManager {
     func sendFeedbackMail(vc: UIViewController) {
         guard MFMailComposeViewController.canSendMail() else {
             let alert = UIAlertController(title: GHToolKitString.emailSettingIsWrongTips, message: "", preferredStyle: .alert)
+            alert.gh.sampleAdjustForIpad(vc.view)
             alert.addAction(UIAlertAction(title: GHToolKitString.ok, style: .default, handler: { action in
                 UIApplication.shared.gh.openEmailSetting()
             }))
