@@ -58,3 +58,7 @@
 "email_setting_is_wrong_tips" = "El servicio de correo electrónico es incorrecto, por favor revise su cuenta de correo electrónico en Configuración.";
 
 "save_photo_title" = "Guardar foto";
+
+"original" = "Original"; // es
+"freeform" = "Forma libre"; // es
+"square" = "Cuadrado"; // es

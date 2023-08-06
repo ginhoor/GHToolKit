@@ -7,7 +7,6 @@
 
 import Foundation
 import MessageUI
-//import GHViewKit
 import AXVToolKit
 import Alamofire
 import StoreKit
@@ -49,6 +48,7 @@ public extension SystemComponentManager {
     func sendFeedbackMail(vc: UIViewController) {
         guard MFMailComposeViewController.canSendMail() else {
             let alert = UIAlertController(title: GHToolKitString.emailSettingIsWrongTips, message: "", preferredStyle: .alert)
+            alert.gh.sampleAdjustForIpad(vc.view)
             alert.addAction(UIAlertAction(title: GHToolKitString.ok, style: .default, handler: { action in
                 UIApplication.shared.gh.openEmailSetting()
             }))
@@ -218,9 +218,7 @@ public extension SystemComponentManager {
         guard let items = items else { return nil }
 
         let vc = UIActivityViewController(activityItems: items, applicationActivities: nil)
-        vc.popoverPresentationController?.sourceView = from.view
-        vc.popoverPresentationController?.sourceRect = CGRect(x: UIScreen.main.bounds.width / 2, y: UIScreen.main.bounds.height, width: 0, height: 0)
-        vc.popoverPresentationController?.permittedArrowDirections = UIPopoverArrowDirection.down
+        vc.gh.sampleAdjustForIpad(from.view)
         vc.excludedActivityTypes = types
         vc.completionWithItemsHandler = { (type, complete, _, error) in
             completion?(complete, eventParams)

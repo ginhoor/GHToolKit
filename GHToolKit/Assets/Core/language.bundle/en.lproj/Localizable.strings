@@ -47,7 +47,6 @@
 "hud_error_title_network" = "Oops! Image processing failed.";
 "hud_error_subtitle_network" = "Please check your internet connection.";
 
-
 "setting_vc_title" = "Setting";
 "setting_vc_item_done_title" = "Done";
 "setting_vc_list_contact_us_title" = "Contact Us";
@@ -59,3 +58,7 @@
 "email_setting_is_wrong_tips" = "Email service is incorrect, please check your email account in Settings.";
 
 "save_photo_title" = "Save Photo";
+
+"original" = "Original";
+"freeform" = "Freeform";
+"square" = "Square";
