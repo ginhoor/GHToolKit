@@ -25,6 +25,7 @@
 "subscription_expired" = "订阅已过期";
 "purchase_free_format" = "%@天免费试用，然后 %@";
 "restore" = "恢复购买";
+"try_free_and_subscribe" = "免费试用并订阅"; // zh-Hans
 
 "alert_delete_project_title" = "是否删除该项目？";
 "alert_not_save_project_title" = "照片未保存";
@@ -57,3 +58,7 @@
 "thanks_for_feedback" = "感谢您的反馈！";
 
 "save_photo_title" = "保存照片";
+
+"original" = "原始"; // zh-Hans
+"freeform" = "自由形式"; // zh-Hans
+"square" = "正方形"; // zh-Hans

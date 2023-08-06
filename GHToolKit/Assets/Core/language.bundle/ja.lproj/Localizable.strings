@@ -25,12 +25,12 @@
 "subscription_expired" = "購読期限が切れました";
 "purchase_free_format" = "%@ 日無料,まで %@";
 "restore" = "購入を戻す";
+"try_free_and_subscribe" = "無料でお試しして購読する"; // ja
 
 "alert_delete_project_title" = "本当にプロジェクトを削除していいですか？";
 "alert_not_save_project_title" = "写真は保存されていません";
 "alert_not_save_project_msg" = "保存せずに終了してよろしいですか？";
 "alert_not_save_project_action_submit" = "保存しないで終了";
-
 
 "hud_congratulations_title" = "おめでとう！";
 "hud_congratulations_subtitle" = "デザインが保存されました";
@@ -47,7 +47,6 @@
 "hud_error_title_network" = "インターネット接続が遅い、または接続されていない。";
 "hud_error_subtitle_network" = "インターネット接続を確認してくだだい";
 
-
 "setting_vc_title" = "設定";
 "setting_vc_item_done_title" = "完了";
 "setting_vc_list_contact_us_title" = "連絡します";
@@ -59,3 +58,7 @@
 "email_setting_is_wrong_tips" = "電子メールサービスが正しくありません。設定でメールアカウントを確認してください。";
 
 "save_photo_title" = "写真を保存する";
+
+"original" = "オリジナル"; // ja
+"freeform" = "フリーフォーム"; // ja
+"square" = "正方形"; // ja

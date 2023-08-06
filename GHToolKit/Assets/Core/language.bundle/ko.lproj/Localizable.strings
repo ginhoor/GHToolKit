@@ -25,12 +25,12 @@
 "subscription_expired" = "구독 만료";
 "purchase_free_format" = "%@일 무료 사용 후 %@";
 "restore" = "구매복원";
+"try_free_and_subscribe" = "무료로 시도하고 구독하세요"; // ko
 
 "alert_delete_project_title" = "프로젝트를 삭제하시겠습니까?";
 "alert_not_save_project_title" = "사진이 저장되지 않음";
 "alert_not_save_project_msg" = "저장하지 않고 종료하시겠습니까?";
 "alert_not_save_project_action_submit" = "저장하지 않고 종료";
-
 
 "hud_congratulations_title" = "축하합니다!";
 "hud_congratulations_subtitle" = "설계가 저장되었습니다.";
@@ -41,13 +41,11 @@
 
 "hud_error_title_client_universal" = "이미지에 액세스하지 못했습니다.";
 
-
 "hud_error_title_server_universal" = "현재 서버가 바쁩니다."; // ko
 "hud_error_subtitle_universal" = "나중에 다시 시도해 주십시오.";
 
 "hud_error_title_network" = "네트워크 연결에 문제가 있는 것 같습니다";
 "hud_error_subtitle_network" = "인터넷 연결을 확인하십시오.";
-
 
 "setting_vc_title" = "설정";
 "setting_vc_item_done_title" = "완료";
@@ -60,3 +58,7 @@
 "email_setting_is_wrong_tips" = "이메일 서비스가 잘못되었습니다. 설정에서 이메일 계정을 확인하십시오.";
 
 "save_photo_title" = "사진 저장";
+
+"original" = "원본"; // ko
+"freeform" = "자유형"; // ko
+"square" = "정사각형"; // ko

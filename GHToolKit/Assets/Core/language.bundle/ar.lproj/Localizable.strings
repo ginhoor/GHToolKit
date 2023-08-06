@@ -25,12 +25,12 @@
 "subscription_expired" = "انتهت صلاحية الاشتراك";
 "purchase_free_format" = "مجاني لمدة %@ أيام، ثم %@";
 "restore" = "استعادة";
+"try_free_and_subscribe" = "جرب مجانًا واشترك"; // ar
 
 "alert_delete_project_title" = "هل أنت متأكد من حذف المشروع؟";
 "alert_not_save_project_title" = "الصورة لم تحفظ";
 "alert_not_save_project_msg" = "هل أنت متأكد من الخروج بدون حفظ؟";
 "alert_not_save_project_action_submit" = "الخروج بدون حفظ";
-
 
 "hud_congratulations_title" = "تهانينا!";
 "hud_congratulations_subtitle" = "تم حفظ تصميمك";
@@ -46,7 +46,6 @@
 "hud_error_title_server_universal" = "الخادم مشغول الآن."; // ar
 "hud_error_subtitle_universal" = "يرجى المحاولة مرة أخرى في وقت لاحق.";
 
-
 "setting_vc_title" = "الإعدادات";
 "setting_vc_item_done_title" = "تم";
 "setting_vc_list_contact_us_title" = "اتصل بنا";
@@ -58,3 +57,8 @@
 "email_setting_is_wrong_tips" = "خدمة البريد الإلكتروني غير صحيحة، يرجى التحقق من حساب البريد الإلكتروني في الإعدادات.";
 
 "save_photo_title" = "حفظ الصورة";
+
+"original" = "أصلي"; // ar
+"freeform" = "حر"; // ar
+"square" = "مربع"; // ar
+

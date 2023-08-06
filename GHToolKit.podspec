@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'GHToolKit'
-  s.version          = '1.0.0'
+  s.version          = '1.7.0'
   s.summary          = 'A short description of GHToolKit.'
 
 # This description is used to generate tags and improve search results.
@@ -50,8 +50,8 @@ TODO: Add long description of the pod here.
     ss.dependency 'KeychainAccess'
   end
 
-  s.subspec 'Common' do |ss|
-    ss.source_files = 'GHToolKit/Classes/Common/**/*'
+  s.subspec 'Business' do |ss|
+    ss.source_files = 'GHToolKit/Classes/Business/**/*'
     ss.dependency 'GHToolKit/Core'
     ss.dependency 'SDWebImage'
     ss.dependency 'Alamofire'

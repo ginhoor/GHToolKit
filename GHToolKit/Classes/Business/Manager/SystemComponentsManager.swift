@@ -7,15 +7,17 @@
 
 import Foundation
 import MessageUI
-//import GHViewKit
 import AXVToolKit
-//import GHToolKit
 import Alamofire
 import StoreKit
 
 public enum SystemComponentPreference: String {
-    /// 最近一次显示评分视图的日期
-    case lastestRateDisplayDate
+    /// 最近一次 请求评分
+    case latestRequestRateDisplayDate
+    /// 最近一次 显示应用内评分
+    case latestRateDisplayDate
+    /// 最近一次 打开App Store评论
+    case latestOpenAppstoreRatePageDate
 }
 
 extension SystemComponentPreference: UserDefaultPreference { }
@@ -29,6 +31,12 @@ public class SystemComponentManager: NSObject {
     public var feedbackEmail: String = ""
     public var appIcon: UIImage?
 
+    public var requestRateDisplayInterval: TimeInterval = Double(Date.Axv.daySeconds) * 1000
+    public var showRateDisplayInterval: TimeInterval = 15 * Double(Date.Axv.daySeconds) * 1000
+
+    public var requestOpenAppstoreRatePageInterval: TimeInterval = Double(Date.Axv.daySeconds) * 1000
+    public var openAppstoreRatePageInterval: TimeInterval = 15 * Double(Date.Axv.daySeconds) * 1000
+
     public let rateUrlFormat: String = "itms-apps://itunes.apple.com/app/id%@?mt=8&action=write-review"
     public let subscriptionUrlPath: String = "https://apps.apple.com/account/subscriptions"
     // 可追溯来源: "https://itunes.apple.com/app/apple-store/id994788581?pt=118483256&ct=share&mt=8"
@@ -40,6 +48,7 @@ public extension SystemComponentManager {
     func sendFeedbackMail(vc: UIViewController) {
         guard MFMailComposeViewController.canSendMail() else {
             let alert = UIAlertController(title: GHToolKitString.emailSettingIsWrongTips, message: "", preferredStyle: .alert)
+            alert.gh.sampleAdjustForIpad(vc.view)
             alert.addAction(UIAlertAction(title: GHToolKitString.ok, style: .default, handler: { action in
                 UIApplication.shared.gh.openEmailSetting()
             }))
@@ -75,44 +84,90 @@ extension SystemComponentManager: MFMailComposeViewControllerDelegate {
 public extension SystemComponentManager {
 
     func showRateAlert(completion: ((Bool) -> Void)? = nil) {
-        guard SystemComponentPreference.lastestRateDisplayDate.object == nil else {
-            completion?(false)
+        let now = Date().timeIntervalSince1970
+        /// 请求时间超过1天
+        if let reqDate = SystemComponentPreference.latestRequestRateDisplayDate.object as? Date,
+           now - reqDate.timeIntervalSince1970 <= requestRateDisplayInterval {
+            DispatchQueue.main.async { completion?(false) }
             return
         }
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-            self.showRate(completion: completion)
+        SystemComponentPreference.latestRequestRateDisplayDate.save(object: Date())
+        /// 距离上次评分超过 15 天
+        if let actionDate = SystemComponentPreference.latestRateDisplayDate.object as? Date,
+           now - actionDate.timeIntervalSince1970 <= showRateDisplayInterval {
+            DispatchQueue.main.async { completion?(false) }
+            return
         }
-    }
 
-    private func showRate(completion: ((Bool) -> Void)? = nil) {
-        guard let manager = networkManager, manager.isReachable else {
-            completion?(false)
-            return
-        }
-        let request = AF.request("http://apple.com", method: .get) { $0.timeoutInterval = 3 }
-        request.response { (response) in
-            switch response.result {
-            case .success:
-                SystemComponentPreference.lastestRateDisplayDate.save(object: Date())
+        DispatchQueue.global().asyncAfter(deadline: .now() + 1) {
+            self.checkNetwork { success in
+                guard success else {
+                    completion?(false)
+                    return
+                }
+                SystemComponentPreference.latestRateDisplayDate.save(object: Date())
                 if let scene = UIApplication.shared.connectedScenes.first(where: { $0.activationState == .foregroundActive }) as? UIWindowScene {
                     SKStoreReviewController.requestReview(in: scene)
                     completion?(true)
                     return
                 }
                 completion?(false)
-            case .failure:
-                completion?(false)
             }
         }
     }
 
-    func openAppstoreRatePage() {
-        UIApplication.shared.gh.openUrl(String(format: rateUrlFormat, appStoreID))
+
+    func openAppstoreRatePage(completion: ((Bool) -> Void)? = nil) {
+        let now = Date().timeIntervalSince1970
+        /// 请求时间超过1天
+        if let reqDate = SystemComponentPreference.latestRequestRateDisplayDate.object as? Date,
+           now - reqDate.timeIntervalSince1970 <= requestOpenAppstoreRatePageInterval {
+            DispatchQueue.main.async {
+                completion?(false)
+            }
+            return
+        }
+        SystemComponentPreference.latestRequestRateDisplayDate.save(object: Date())
+        /// 距离上次评分超过 15 天
+        if let actionDate = SystemComponentPreference.latestOpenAppstoreRatePageDate.object as? Date,
+           now - actionDate.timeIntervalSince1970 <= openAppstoreRatePageInterval {
+            DispatchQueue.main.async { completion?(false) }
+            return
+        }
+
+        checkNetwork { [weak self] success in
+            guard let self = self else { return }
+            guard success else {
+                completion?(false)
+                return
+            }
+            SystemComponentPreference.latestOpenAppstoreRatePageDate.save(object: Date())
+            UIApplication.shared.gh.openUrl(String(format: self.rateUrlFormat, self.appStoreID), completion: completion)
+        }
     }
 
     func openAppstoreSubscriptionPage() {
         UIApplication.shared.gh.openUrl(subscriptionUrlPath)
     }
+
+    private func checkNetwork(completion: @escaping (Bool) -> Void) {
+        guard let manager = networkManager, manager.isReachable else {
+            DispatchQueue.main.async { completion(false) }
+            return
+        }
+        let request = AF.request("http://apple.com", method: .options) { $0.timeoutInterval = 3 }
+        request.response { (response) in
+            DispatchQueue.main.async {
+                switch response.result {
+                case .success:
+                    completion(true)
+                case .failure:
+                    completion(false)
+                }
+            }
+        }
+    }
+
 }
 
 public extension SystemComponentManager {
@@ -122,39 +177,37 @@ public extension SystemComponentManager {
     ///   - vc: 用于展示的ViewController
     ///   - appIconImage: 链接相关的图标，为nil时会使用appIcon的配置
     ///   - eventParams: 自定义事件参数
-    func shareApp(vc: UIViewController, appIconImage: UIImage? = nil, eventParams: [String: Any]? = nil) {
-        Task.detached {
+    func shareApp(from: UIViewController, eventParams: [String: Any]? = nil) {
+        Task { @MainActor in
             var items = [Any]()
             if let url = URL(string: String(format: self.shareUrlPath, self.appStoreID)) {
                 items.append(url)
             }
-            if let activityVC = self.generateActivityVC(items: items, eventParams: eventParams) {
+            if let activityVC = self.generateActivityVC(from: from, items: items, eventParams: eventParams) {
                 Task { @MainActor in
-                    vc.present(activityVC, animated: true)
+                    from.present(activityVC, animated: true)
                 }
             }
         }
     }
 
-    /// 分享Appstore链接
+    /// 分享更多
     /// - Parameters:
     ///   - vc: 用于展示的ViewController
     ///   - items: 分享资源
     ///   - eventParams: 自定义事件参数
-    func shareApp(vc: UIViewController, items: [Any]?, eventParams: [String: Any]? = nil) {
-        Task.detached {
-            if let activityVC = self.generateActivityVC(items: items, eventParams: eventParams) {
+    func shareMore(from: UIViewController, items: [Any]?, eventParams: [String: Any]? = nil) {
+        Task { @MainActor in
+            if let activityVC = self.generateActivityVC(from: from, items: items, eventParams: eventParams) {
                 Task { @MainActor in
-                    // 加上sourceView避免iPad中崩溃
-                    activityVC.popoverPresentationController?.sourceView = vc.view
-                    vc.present(activityVC, animated: true)
+                    from.present(activityVC, animated: true)
                 }
             }
         }
     }
 
     @discardableResult
-    func generateActivityVC(items: [Any]?, eventParams: [String: Any]? = nil,
+    func generateActivityVC(from: UIViewController, items: [Any]?, eventParams: [String: Any]? = nil,
                             types: [UIActivity.ActivityType] = [.postToFacebook,
                                                                 .postToTwitter,
                                                                 .postToWeibo,
@@ -163,7 +216,9 @@ public extension SystemComponentManager {
                                                                 .copyToPasteboard],
                             completion: ((_ success: Bool, _ eventParams: [String: Any]?) -> Void)? = nil) -> UIActivityViewController? {
         guard let items = items else { return nil }
+
         let vc = UIActivityViewController(activityItems: items, applicationActivities: nil)
+        vc.gh.sampleAdjustForIpad(from.view)
         vc.excludedActivityTypes = types
         vc.completionWithItemsHandler = { (type, complete, _, error) in
             completion?(complete, eventParams)

@@ -25,12 +25,12 @@
 "subscription_expired" = "Đăng ký hết hạn";
 "purchase_free_format" = "%@ ngày miễn phí, sau đó %@";
 "restore" = "Khôi phục";
+"try_free_and_subscribe" = "Thử miễn phí và đăng ký"; // vi
 
 "alert_delete_project_title" = "Bạn có chắc chắn xóa dự án không?";
 "alert_not_save_project_title" = "Ảnh chưa lưu";
 "alert_not_save_project_msg" = "Bạn có chắc chắn thoát mà không lưu?";
 "alert_not_save_project_action_submit" = "Thoát mà không lưu";
-
 
 "hud_congratulations_title" = "Xin chúc mừng!";
 "hud_congratulations_subtitle" = "Thiết kế của bạn đã được lưu";
@@ -41,13 +41,11 @@
 
 "hud_error_title_client_universal" = "Thu thập hình ảnh không thành công.";
 
-
 "hud_error_title_server_universal" = "Máy chủ đang bận vào lúc này."; // vi
 "hud_error_subtitle_universal" = "Vui lòng thử lại sau";
 
 "hud_error_title_network" = "Kết nối mạng lỗi...";
 "hud_error_subtitle_network" = "Xin vui lòng kiểm tra kết nối Internet của bạn.";
-
 
 "setting_vc_title" = "Cài đặt";
 "setting_vc_item_done_title" = "Xong";
@@ -60,3 +58,8 @@
 "email_setting_is_wrong_tips" = "Dịch vụ email không chính xác, vui lòng kiểm tra tài khoản email của bạn trong Cài đặt.";
 
 "save_photo_title" = "Lưu ảnh";
+
+"original" = "Bản gốc"; // vi
+"freeform" = "Hình dạng tự do"; // vi
+"square" = "Hình vuông"; // vi
+

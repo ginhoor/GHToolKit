@@ -24,6 +24,8 @@ public enum GHToolKitString {
     public static let cancel = GHToolKitString.tr("Localizable", "cancel", fallback: "Cancel")
     /// Continue
     public static let `continue` = GHToolKitString.tr("Localizable", "continue", fallback: "Continue")
+    /// Try Free and Subscribe
+    public static let tryFreeAndSubscribe = GHToolKitString.tr("Localizable", "try_free_and_subscribe", fallback: "Try Free and Subscribe")
     /// Delete
     public static let delete = GHToolKitString.tr("Localizable", "delete", fallback: "Delete")
     /// Dismiss
@@ -107,6 +109,12 @@ public enum GHToolKitString {
     public static let emailSettingIsWrongTips = GHToolKitString.tr("Localizable", "email_setting_is_wrong_tips", fallback: "Email service is incorrect, please check your email account in Settings.")
     /// Save Photo
     public static let savePhotoTitle = GHToolKitString.tr("Localizable", "save_photo_title", fallback: "Save Photo")
+    /// Original
+    public static let original = GHToolKitString.tr("Localizable", "original", fallback: "Original")
+    /// Freeform
+    public static let freeform = GHToolKitString.tr("Localizable", "freeform", fallback: "Freeform")
+    /// Square
+    public static let square = GHToolKitString.tr("Localizable", "square", fallback: "Square")
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:enable nesting type_body_length type_name vertical_whitespace_opening_braces
