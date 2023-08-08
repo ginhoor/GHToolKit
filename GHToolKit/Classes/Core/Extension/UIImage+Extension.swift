@@ -32,4 +32,27 @@ public extension GHTKUIImageExtension {
             return img.jpegData(compressionQuality: 0.8)
         }
     }
+
+    /// 异步解码图片，再加载
+    /// - Parameter path: a file URL that references the local file or directory at path.
+    /// - Parameter imageMaxPixelSize: 图片的最大像素质
+    static func loadImage(filePath: String, imageMaxPixelSize: CGFloat? = nil) async -> UIImage? {
+        let imageURL = URL(fileURLWithPath: filePath) as CFURL
+
+        var options: CFDictionary?
+        if let imageMaxPixelSize = imageMaxPixelSize {
+            options = [
+                kCGImageSourceCreateThumbnailFromImageAlways: true,
+                kCGImageSourceCreateThumbnailWithTransform: true,
+                kCGImageSourceShouldCacheImmediately: true,
+                kCGImageSourceThumbnailMaxPixelSize: imageMaxPixelSize
+            ] as CFDictionary
+        }
+
+        guard let source: CGImageSource = CGImageSourceCreateWithURL(imageURL, nil),
+              let imageRef: CGImage = CGImageSourceCreateThumbnailAtIndex(source, 0, options) else { return nil }
+
+        let img = UIImage(cgImage: imageRef)
+        return img
+    }
 }

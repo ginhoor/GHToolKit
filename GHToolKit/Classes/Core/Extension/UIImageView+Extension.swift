@@ -29,32 +29,11 @@ public extension GHUIImageViewExtension {
     /// 异步解码图片，再加载
     /// - Parameter path: a file URL that references the local file or directory at path.
     /// - Parameter imageMaxPixelSize: 图片的最大像素质
-    public func loadImageAsync(filePath: String, imageMaxPixelSize: CGFloat? = nil) async {
-        let imageURL = URL(fileURLWithPath: filePath) as CFURL
-
-        var options: CFDictionary?
-        if let imageMaxPixelSize = imageMaxPixelSize {
-            options = [
-                kCGImageSourceCreateThumbnailFromImageAlways: true,
-                kCGImageSourceCreateThumbnailWithTransform: true,
-                kCGImageSourceShouldCacheImmediately: true,
-                kCGImageSourceThumbnailMaxPixelSize: imageMaxPixelSize
-            ] as CFDictionary
-        }
-
-        if let source: CGImageSource = CGImageSourceCreateWithURL(imageURL, nil),
-           let imageRef: CGImage = CGImageSourceCreateThumbnailAtIndex(source, 0, options) {
-            let img = UIImage(cgImage: imageRef)
-            Task { @MainActor in
-                self.imgV.image = img
-            }
-        } else {
-            Task { @MainActor in
-                self.imgV.image = nil
-            }
+    public func loadImage(filePath: String, imageMaxPixelSize: CGFloat? = nil) async {
+        let img = await UIImage.GH.loadImage(filePath: filePath, imageMaxPixelSize: imageMaxPixelSize)
+        Task { @MainActor in
+            self.imgV.image = img
         }
     }
-
-
 
 }
