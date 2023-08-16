@@ -32,4 +32,30 @@ public extension GHTKUIImageExtension {
             return img.jpegData(compressionQuality: 0.8)
         }
     }
+
+    /// 异步解码图片，再加载
+    /// - Parameter path: a file URL that references the local file or directory at path.
+    /// - Parameter imageMaxPixelSize: 图片的最大像素质
+    /// https://github.com/pro648/tips/wiki/图像IO之图片加载、解码，缓存
+    /// https://blog.hudongdong.com/ios/1209.html
+    static func loadImage(filePath: String, imageMaxPixelSize: CGFloat? = nil) async -> UIImage? {
+        let imageURL = URL(fileURLWithPath: filePath) as CFURL
+
+        var options: CFDictionary?
+        if let imageMaxPixelSize = imageMaxPixelSize {
+//            kCGImageSourceShouldCache选项会缓存解码的图片，直到图片被销毁
+            options = [
+                kCGImageSourceCreateThumbnailFromImageAlways: true,
+                kCGImageSourceCreateThumbnailWithTransform: true,
+                kCGImageSourceShouldCacheImmediately: true,
+                kCGImageSourceThumbnailMaxPixelSize: imageMaxPixelSize
+            ] as CFDictionary
+        }
+
+        guard let source: CGImageSource = CGImageSourceCreateWithURL(imageURL, nil),
+              let imageRef: CGImage = CGImageSourceCreateThumbnailAtIndex(source, 0, options) else { return nil }
+
+        let img = UIImage(cgImage: imageRef)
+        return img
+    }
 }
